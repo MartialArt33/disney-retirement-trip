@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!-- Family/email version. Financial planning section removed. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art & Angie's Disney Retirement Family Trip - Updated</title>
+  <style>
+    :root {
+      --ink: #243042;
+      --muted: #667085;
+      --paper: #fffaf0;
+      --blue: #2867a5;
+      --orange: #d97706;
+      --green: #3f7d58;
+      --line: #d8c7a3;
+      --white: #fffdf8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 10%, rgba(255, 199, 94, 0.28), transparent 28%),
+        radial-gradient(circle at 85% 12%, rgba(72, 160, 220, 0.22), transparent 30%),
+        linear-gradient(180deg, #fff8e7 0%, #eef7ff 100%);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.42;
+    }
+    .page { max-width: 980px; margin: 0 auto; padding: 28px 24px 36px; }
+    header { border-bottom: 4px double var(--line); padding-bottom: 18px; margin-bottom: 18px; }
+    .eyebrow {
+      color: var(--orange);
+      font: 700 0.9rem/1.2 "Segoe UI", Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 6px;
+    }
+    h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.6rem); line-height: 0.98; color: #15395b; }
+    .subtitle { max-width: 820px; margin: 12px 0 0; font-size: 1.08rem; }
+    .quick-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin-top: 14px;
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 0.95rem;
+    }
+    .quick-strip span { border-left: 3px solid var(--orange); padding-left: 8px; }
+    main {
+      background: rgba(255, 253, 248, 0.9);
+      border: 1px solid rgba(216, 199, 163, 0.8);
+      padding: 22px 26px;
+      border-radius: 18px;
+      box-shadow: 0 18px 45px rgba(80, 60, 30, 0.10);
+    }
+    section { margin: 0 0 20px; }
+    section:last-child { margin-bottom: 0; }
+    h2 { margin: 0 0 7px; color: var(--blue); font-size: 1.35rem; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+    h3 { margin: 0 0 4px; font: 700 1rem/1.2 "Segoe UI", Arial, sans-serif; color: #1f2937; }
+    p { margin: 0 0 9px; }
+    .two-col { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 24px; align-items: start; }
+    .group-block { margin-bottom: 12px; }
+    .group-title { color: var(--green); font: 800 0.9rem/1.3 "Segoe UI", Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
+    .traveler-list { columns: 1; margin: 4px 0 0; padding-left: 18px; }
+    .traveler-list li { margin: 3px 0; }
+    .itinerary { display: grid; grid-template-columns: 120px 1fr; gap: 8px 16px; margin-top: 8px; }
+    .itinerary .when { color: var(--green); font: 800 0.9rem/1.3 "Segoe UI", Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.04em; padding-top: 1px; }
+    .itinerary .what { padding-bottom: 8px; border-bottom: 1px dotted var(--line); }
+    .itinerary .what:last-child { border-bottom: none; }
+    .decision { display: inline-block; margin-top: 3px; color: #7c4a03; font: 700 0.88rem/1.25 "Segoe UI", Arial, sans-serif; }
+    .compact-list { margin: 6px 0 0; padding-left: 18px; }
+    .compact-list li { margin: 4px 0; }
+    .note { background: #fff3cd; border-left: 5px solid var(--orange); padding: 10px 12px; margin-top: 8px; font-family: "Segoe UI", Arial, sans-serif; font-size: 0.94rem; }
+    .money { margin-top: 26px; padding-top: 18px; border-top: 4px double var(--line); font-family: "Segoe UI", Arial, sans-serif; }
+    .money h2 { color: #92400e; }
+    .remove { margin: 0 0 10px; color: #7c2d12; font-weight: 700; }
+    table { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 0.88rem; }
+    th, td { border-bottom: 1px solid #e7d7b8; padding: 7px 8px; vertical-align: top; }
+    th { text-align: left; background: #f7ead1; color: #3b2f1a; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    td.num, th.num { text-align: right; white-space: nowrap; }
+    .total td { font-weight: 800; background: #eef6ff; }
+    .assumptions { columns: 2; column-gap: 28px; margin: 4px 0 0; padding-left: 18px; font-size: 0.9rem; }
+    .assumptions li { break-inside: avoid; margin-bottom: 4px; }
+    footer { margin-top: 18px; text-align: center; color: var(--muted); font: 0.88rem/1.3 "Segoe UI", Arial, sans-serif; }
+    @media (max-width: 760px) {
+      .page { padding: 16px; }
+      main { padding: 18px; }
+      .two-col, .itinerary { grid-template-columns: 1fr; }
+      .assumptions { columns: 1; }
+      .itinerary .what { padding-bottom: 12px; }
+    }
+    @media print {
+      body { background: white; }
+      .page { max-width: none; padding: 0.35in; }
+      main { box-shadow: none; border: none; padding: 0; }
+      section { break-inside: avoid; }
+      .money { break-before: page; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="eyebrow">October 2026 • Orlando / Kissimmee</div>
+      <h1>Art & Angie’s Disney Retirement Family Trip</h1>
+      <p class="subtitle">
+        A family week in Florida built first around visiting Cathy and Charlie, with Disney World,
+        Universal, and a few classic Orlando-area adventures added around the edges.
+      </p>
+      <div class="quick-strip">
+        <span>Departure: October 3, 2026</span>
+        <span>Main trip: one week</span>
+        <span>Home base: Orlando / Kissimmee</span>
+        <span>Plans tentative as of mid-May 2026</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="two-col">
+        <div>
+          <h2>The Trip</h2>
+          <p>
+            Art retires on September 30, 2026, and a few days later the family heads to Florida.
+            The main purpose of the trip is spending time with Cathy and Charlie near Kissimmee.
+            Disney World, Universal Studios, and a few other Orlando-area attractions are part of the fun,
+            but the center of the trip is family time.
+          </p>
+          <p>
+            The week is planned around staying together near Kissimmee, making it easy to visit with
+            Cathy and Charlie, enjoy the parks, share meals, hang out at the rented house, and keep the
+            schedule full without turning it into a forced march.
+          </p>
+          <div class="note">
+            These are tentative plans and working estimates as of mid-May 2026. Details will change as flights,
+            lodging, park days, and activity reservations are finalized.
+          </div>
+        </div>
+
+        <div>
+          <h2>Travel Group</h2>
+          <div class="group-block">
+            <div class="group-title">The Spokane Flight Crew</div>
+            <ul class="traveler-list">
+              <li>Art & Angie</li>
+              <li>Rachel & Jesse</li>
+              <li>Lisa & Rich</li>
+              <li>William</li>
+              <li>Elanor</li>
+            </ul>
+          </div>
+          <div class="group-block">
+            <div class="group-title">The Kissimmee Welcome Committee</div>
+            <ul class="traveler-list">
+              <li>Cathy & Charlie, aka C<sup>2</sup></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Week-at-a-Glance Itinerary</h2>
+        <div class="itinerary">
+          <div class="when">Travel Day</div>
+          <div class="what">
+            <h3>Spokane to Orlando</h3>
+            <p>The Spokane Flight Crew flies to Orlando, picks up the SUV and car, and gets settled into the rented house near Kissimmee.</p>
+            <span class="decision">Decision: final Southwest Choice flights.</span>
+          </div>
+
+          <div class="when">Arrival Weekend</div>
+          <div class="what">
+            <h3>Settle in near C<sup>2</sup></h3>
+            <p>The rented house should make it easy to unpack, meet up with Cathy and Charlie, swim, visit, and start the week without everyone living out of suitcases.</p>
+            <span class="decision">Decision: final rental house selection.</span>
+          </div>
+
+          <div class="when">Weekdays</div>
+          <div class="what">
+            <h3>Two Disney World park days</h3>
+            <p>Two weekday Disney park days are planned for the full Orlando group, including C<sup>2</sup>. Disney is a major part of the trip, but not the only point of the trip.</p>
+          </div>
+
+          <div class="when">Park Day</div>
+          <div class="what">
+            <h3>Universal Studios</h3>
+            <p>Universal is included in the working plan as a one-day outing. The practical version is one park for one day unless the group later decides park-to-park access is worth the extra cost.</p>
+            <span class="decision">Decision: one park or park-to-park.</span>
+          </div>
+
+          <div class="when">Florida Day</div>
+          <div class="what">
+            <h3>Recommended airboat ride</h3>
+            <p>A Kissimmee-area airboat ride adds a classic Florida wetlands experience without using up an entire day. Expect open water, wildlife, birds, possible alligator sightings, and a ride that feels very different from the theme parks.</p>
+            <span class="decision">Decision: ride length and operator.</span>
+          </div>
+
+          <div class="when">Evening Out</div>
+          <div class="what">
+            <h3>Medieval Times dinner show</h3>
+            <p>Medieval Times in Kissimmee is a family dinner show with knights, horses, jousting, sword fighting, cheering sections, and a full meal. It fits well as a non-park evening where everyone can do something together.</p>
+            <span class="decision">Decision: which evening to reserve.</span>
+          </div>
+
+          <div class="when">Downtime</div>
+          <div class="what">
+            <h3>Pool, breakfasts, meals, and time with C<sup>2</sup></h3>
+            <p>Breakfasts will mostly be at the rented house. Some dinners and evenings can be spent with C<sup>2</sup>, with a mix of casual restaurant meals, house meals, and downtime built in.</p>
+          </div>
+
+          <div class="when">Return</div>
+          <div class="what">
+            <h3>Family heads home</h3>
+            <p>The kids and grandkids return after the main week. Art and Angie continue with their extra Florida week and trade in the group vehicle setup for something sportier.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="two-col">
+        <div>
+          <h2>Getting Around</h2>
+          <p>Three vehicles will be parked at Spokane airport. In Florida, the working plan is an SUV and car for the Spokane travelers during the main family week. After that, Art and Angie can switch to a sportier vehicle for their extra Florida week.</p>
+          <span class="decision">Decision: exact SUV/car combination for the family week.</span>
+        </div>
+
+        <div>
+          <h2>Food Plan</h2>
+          <p>Breakfasts will mostly be simple rented-house food. Park lunches happen on park days, with casual restaurants, meals at the house, and some dinners or evenings with C<sup>2</sup> filling in the rest of the week.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Open Decisions</h2>
+        <ul class="compact-list">
+          <li><strong>Flights:</strong> final Southwest Choice schedule and booking.</li>
+          <li><strong>Lodging:</strong> exact rental house, bedroom layout, kitchen, pool, and location.</li>
+          <li><strong>Vehicle setup:</strong> final SUV and car arrangement for the main week.</li>
+          <li><strong>Universal:</strong> one park or park-to-park.</li>
+          <li><strong>Airboat ride:</strong> operator, ride length, and best day to fit it in.</li>
+          <li><strong>Medieval Times:</strong> best evening for the dinner show.</li>
+          <li><strong>Art and Angie’s extra week:</strong> details later, with Kennedy Space Center or rocket launch possibilities parked for that portion.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Later Planning</h2>
+        <p>Art and Angie’s extra Florida week will be planned separately after the main family week is shaped up. That portion may include sightseeing around Florida, visiting Mike and Mindy in Plantation, switching to a sportier rental car, and possibly considering Kennedy Space Center or a rocket launch if the timing works.</p>
+      </section>
+    </main>
+
+    <footer>Family itinerary draft. Tentative as of mid-May 2026; details will tighten up as flights, lodging, and activities are booked.</footer>
+  </div>
+</body>
+</html>
