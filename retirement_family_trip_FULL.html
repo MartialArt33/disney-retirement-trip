@@ -797,6 +797,137 @@
       flex: 1 1 240px;
     }
 
+
+    .accommodation-showcase {
+      display: grid;
+      grid-template-columns: minmax(250px, 0.82fr) minmax(220px, 0.7fr) minmax(300px, 1fr);
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .accommodation-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-width: 0;
+    }
+
+    .accommodation-copy p {
+      margin: 0 0 12px;
+      color: #07336f;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.06rem;
+      font-style: italic;
+      line-height: 1.35;
+    }
+
+    .accommodation-link {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: #0b3470;
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .link-icon {
+      font-size: 0.92em;
+      margin-left: 4px;
+    }
+
+    .accommodation-link:hover { text-decoration: underline; }
+
+    .accommodation-features {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      margin-top: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 0.91rem;
+      line-height: 1.18;
+    }
+
+    .accommodation-features span {
+      display: block;
+      min-width: 0;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(215, 196, 155, 0.78);
+      white-space: nowrap;
+    }
+
+    .accommodation-features span:last-child { border-bottom: 0; }
+
+
+
+    .feature-section > .card {
+      border: 1px solid #d9bf83;
+      border-left: 6px solid #d97706;
+      background: linear-gradient(180deg, rgba(255, 253, 248, 0.98), rgba(255, 247, 223, 0.72));
+      box-shadow: 0 10px 24px rgba(80, 60, 30, 0.10);
+    }
+
+    .section-title-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      align-items: baseline;
+      margin: 0 0 7px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-title-line h2 {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    .section-title-line .accommodation-link {
+      margin: 0;
+      font-size: 0.95rem;
+      white-space: nowrap;
+    }
+
+    .accommodation-media {
+      display: contents;
+    }
+
+    .accommodation-photos {
+      display: grid;
+      grid-template-rows: repeat(2, minmax(160px, 1fr));
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .accommodation-photo {
+      min-height: 160px;
+      border-radius: 12px;
+      border: 1px solid #d7c49b;
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.35);
+    }
+
+    .accommodation-photo.pool {
+      background-image: url("https://media.vrbo.com/lodging/94000000/93240000/93232400/93232359/669c0a37.jpg?impolicy=resizecrop&rw=1200&ra=fit");
+    }
+
+    .accommodation-photo.second {
+      background-image: url("https://media.vrbo.com/lodging/94000000/93240000/93232400/93232359/81255dcb.jpg?impolicy=resizecrop&rw=1200&ra=fit");
+    }
+
+
+    .accommodation-map {
+      width: 100%;
+      min-height: 330px;
+      border: 1px solid #d7c49b;
+      border-radius: 12px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.35);
+    }
+
+
+
+
     @media (max-width: 760px) {.page { padding: 16px; }
       main { padding: 18px; }.two-col,.itinerary { grid-template-columns: 1fr; }.assumptions { columns: 1; }.itinerary.what { padding-bottom: 12px; }
     }
@@ -825,9 +956,9 @@
       </div>
 
       <div class="trip-update">
-        <div class="trip-update-head"><strong>Important Trip Update</strong><span class="trip-update-date">June 7, 2026</span></div>
-        <div class="update-line">Flights are booked: October 5–12, 2026.</div>
-        <div class="update-subline">Current priority: Rental House Selection.</div>
+        <div class="trip-update-head"><strong>Important Trip Update</strong><span class="trip-update-date">June 11, 2026</span></div>
+        <div class="update-line">Flights are booked and the house is reserved for October 5–12, 2026.</div>
+        <div class="update-subline">Current priority: Vehicle Selection.</div>
       </div>
     </header>
 
@@ -874,8 +1005,8 @@
         <h2>Planning Status</h2>
         <ul class="compact-list status-list" style="list-style: none; padding-left: 0;">
           <li class="done">✅ ✈️ <strong>Flights Booked</strong> — Southwest Choice</li>
-          <li>🏠 <strong>Rental House Selection</strong> — Current priority.</li>
-          <li>🚙 <strong>Vehicle Selection</strong> — Waiting on rental house location.</li>
+          <li class="done">✅ 🏠 <strong>Rental House Reserved</strong> — Disney Paradise Villa.</li>
+          <li>🚙 <strong>Vehicle Selection</strong> — Current priority.</li>
           <li>🎟️ <strong>Disney Tickets</strong> — Pending.</li>
           <li>🎢 <strong>Universal Studios</strong> — Pending.</li>
           <li>🐊 <strong>Airboat Adventure</strong> — Pending.</li>
@@ -883,11 +1014,53 @@
         </ul>
       </section>
 
-      <section class="card">
-          <div class="flight-title">
-            <h2>Flights</h2>
-            <span>Southwest Airlines</span>
+
+
+      <section class="feature-section">
+        <div class="section-title-line">
+          <h2>Accommodations</h2>
+          <a class="accommodation-link" href="https://www.vrbo.com/9821898ha">Disney Paradise Villa w/ South Private Pool — details <span class="link-icon" aria-hidden="true">🔗</span></a>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="accommodation-showcase">
+              <div class="accommodation-copy">
+                <p>
+                  Our home base for the trip — space to relax, play, swim, and make the week feel easy between Orlando adventures.
+                </p>
+                <div class="accommodation-features">
+                  <span>📍 Cumbrian Lakes, Kissimmee</span>
+                  <span>🏊 Enclosed pool</span>
+                  <span>🌅 Lake + conservation view</span>
+                  <span>🚗 12–18 min to Cathy &amp; Charlie</span>
+                  <span>🛏️ 5 bedrooms</span>
+                  <span>🚿 3.5 bathrooms</span>
+                  <span>🪄 Harry Potter twin room</span>
+                  <span>🍳 Full kitchen</span>
+                  <span>🍽️ Dining for 8</span>
+                  <span>🧺 Washer/dryer</span>
+                  <span>🎱 Game room: pool + foosball</span>
+                  <span>🎮 Loft gaming: PS4 + Wii</span>
+                </div>
+              </div>
+              <div class="accommodation-media">
+                <div class="accommodation-photos">
+                  <div class="accommodation-photo pool" role="img" aria-label="Disney Paradise Villa private pool and outdoor area"></div>
+                  <div class="accommodation-photo second" role="img" aria-label="Disney Paradise Villa interior and family space"></div>
+                </div>
+                <iframe class="accommodation-map" title="Map showing route from Cumbrian Lakes to Bella Lago in Kissimmee" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?output=embed&q=Cumbrian%20Lakes%20Kissimmee%20FL%20to%20Bellalago%20Kissimmee%20FL&z=11"></iframe>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section class="feature-section">
+        <div class="flight-title section-title-line">
+          <h2>Flights</h2>
+          <span>Southwest Airlines</span>
+        </div>
+        <div class="card">
           <div class="card-inner">
             <div class="subhead">Outbound — Monday, October 5, 2026</div>
             <table>
@@ -949,20 +1122,21 @@
               <div class="seat-note">Seat maps not to scale. Arrangement varies by aircraft. Aisle is between C and D.</div>
             </details>
           </div>
-        </section>
+        </div>
+      </section>
 
       <section>
           <h2>Week-at-a-Glance Itinerary</h2>
           <table class="week-table">
             <tbody>
-              <tr><td class="day-icon">✈️</td><td class="day-date">Mon<br>Oct 5</td><td><strong>Travel Day</strong> — The Travelers flies Southwest to Orlando, arriving at 5:30 PM, then picks up the SUV and car and gets settled near Kissimmee.</td></tr>
+              <tr><td class="day-icon">✈️</td><td class="day-date">Mon<br>Oct 5</td><td><strong>Travel Day</strong> — The Travelers fly Southwest to Orlando, arriving at 5:30 PM, then picks up the SUV and car and gets settled near Kissimmee.</td></tr>
               <tr><td class="day-icon">🏡</td><td class="day-date">Arrival</td><td><strong>Settle in near C<sup>2</sup></strong> — Unpack, meet up with Cathy and Charlie, swim, visit, and start the week without everyone living out of suitcases.</td></tr>
               <tr><td class="day-icon">🏰</td><td class="day-date">Weekdays</td><td><strong>Two Disney World park days</strong> — Two weekday Disney park days are planned for the full Orlando group, including C<sup>2</sup>.</td></tr>
               <tr><td class="day-icon">🎢</td><td class="day-date">Park Day</td><td><strong>Universal Studios</strong> — One-day outing in the working plan. Decision: one park or park-to-park.</td></tr>
               <tr><td class="day-icon">🐊</td><td class="day-date">Florida</td><td><strong>Recommended airboat ride</strong> — Kissimmee-area airboat ride with open water, wildlife, birds, and possible alligator sightings.</td></tr>
               <tr><td class="day-icon">⚔️</td><td class="day-date">Evening</td><td><strong>Medieval Times dinner show, or similar</strong> — Family dinner show with knights, horses, jousting, cheering sections, and a full meal.</td></tr>
               <tr><td class="day-icon">☀️</td><td class="day-date">Downtime</td><td><strong>Pool, breakfasts, meals, and time with C<sup>2</sup></strong> — House breakfasts, casual meals, park lunches, and family time.</td></tr>
-              <tr><td class="day-icon">🧳</td><td class="day-date">Mon<br>Oct 12</td><td><strong>Return</strong> — The Travelers returns home, arriving back in Spokane at 1:45 PM. Art and Angie can later adjust their return flight for the extra Florida week.</td></tr>
+              <tr><td class="day-icon">🧳</td><td class="day-date">Mon<br>Oct 12</td><td><strong>Return</strong> — The Travelers return home, arriving back in Spokane at 1:45 PM. Art and Angie can later adjust their return flight for the extra Florida week.</td></tr>
             </tbody>
           </table>
 
@@ -972,11 +1146,11 @@
         <div>
           <h2>Getting Around</h2>
           <p>
-            Flights are booked. Three vehicles will be parked at Spokane airport. In Florida, the working plan
-            is an SUV and car for the Spokane travelers during the main family week. The final vehicle mix should
-            be confirmed after the rental house location is selected.
+            Flights are booked and the house is reserved. Three vehicles will be parked at Spokane airport.
+            In Florida, the working plan is an SUV and car for the Spokane travelers during the main family week.
+            The final vehicle mix can now be confirmed using the reserved house location.
           </p>
-          <span class="decision">Next step: pick the rental house first, then confirm the SUV/car combination.</span>
+          <span class="decision">Next step: confirm the SUV/car combination.</span>
         </div>
 
         <div>
@@ -988,8 +1162,7 @@
       <section>
         <h2>Open Decisions</h2>
         <ul class="compact-list">
-          <li><strong>Rental house:</strong> highest priority now; compare VRBO/Airbnb options near Kissimmee for October 5–12.</li>
-          <li><strong>Vehicle setup:</strong> final SUV and car arrangement after the house location is known.</li>
+          <li><strong>Vehicle setup:</strong> final SUV and car arrangement using the reserved house location.</li>
           <li><strong>Universal:</strong> one park or park-to-park.</li>
           <li><strong>Airboat ride:</strong> operator, ride length, and best day to fit it in.</li>
           <li><strong>Medieval Times:</strong> best evening for the dinner show.</li>
@@ -1004,25 +1177,25 @@
               <tr><th>Item</th><th>Count</th><th class="num">Budget</th><th>Assumption / Notes</th></tr>
             </thead>
             <tbody>
-              <tr><td>Southwest Airfare ✓ Booked</td><td>8 souls</td><td class="num acct"><strong>$4,067.20</strong></td><td>Round trip, Southwest Choice fare, assigned standard seats, confirmation BV6ER3.</td></tr>
+              <tr><td>Southwest Airfare ✓ Booked</td><td>8 souls</td><td class="num acct"><strong>$4,067</strong></td><td>Round trip, Southwest Choice fare, assigned standard seats, confirmation BV6ER3.</td></tr>
               <tr><td>Checked Baggage</td><td>8 souls</td><td class="num acct">$720</td><td>Not paid yet. Southwest currently shows first checked bag at $45 each way.</td></tr>
               <tr><td>Flight Insurance</td><td>8 souls</td><td class="num acct">$400–$640</td><td>Pending; likely June task after major bookings.</td></tr>
-              <tr><td>GEG Transportation & Economy Parking</td><td>3 vehicles</td><td class="num acct">$180–$300</td><td>Fuel plus economy parking.</td></tr>
+              <tr><td>GEG Parking</td><td>3 vehicles</td><td class="num acct">$180–$300</td><td>Fuel plus economy parking.</td></tr>
               <tr><td>Florida SUV and Car</td><td>8 souls</td><td class="num acct">$900–$1,600</td><td>SUV and car for the main family week.</td></tr>
-              <tr><td>Rental House</td><td>8 souls</td><td class="num acct">$2,100–$3,200</td><td>VRBO or similar rental near Kissimmee; kitchen and pool preferred.</td></tr>
+              <tr><td>Rental House ✓ Reserved</td><td>8 souls</td><td class="num acct"><strong>$2,172</strong></td><td>Disney Paradise Villa, Oct 5–12, 2026.</td></tr>
               <tr><td>Disney Tickets</td><td>10 souls</td><td class="num acct">$3,400–$4,200</td><td>Two weekday base-ticket park days. Includes C<sup>2</sup>.</td></tr>
               <tr><td>Universal Studios</td><td>10 souls</td><td class="num acct">$1,250–$1,700</td><td>One park, one day planning estimate.</td></tr>
               <tr><td>Recommended Airboat Ride</td><td>10 souls</td><td class="num acct">$450–$750</td><td>Kissimmee-area airboat ride planning estimate.</td></tr>
               <tr><td>Medieval Times dinner show, or similar</td><td>10 souls</td><td class="num acct">$700–$950</td><td>Dinner show in Kissimmee planning estimate.</td></tr>
               <tr><td>Food & Coffee</td><td>10 souls</td><td class="num acct">$3,500</td><td>$50/person/day for 7 days.</td></tr>
               <tr><td>Souvenirs & Incidentals</td><td>10 souls</td><td class="num acct">$1,000</td><td>$100/person total.</td></tr>
-              <tr class="total"><td colspan="2">Estimated Main Trip Total</td><td class="num acct">$18,040–$22,627.20</td><td>Includes booked airfare and estimated remaining items.</td></tr>
+              <tr class="total"><td colspan="2">Estimated Main Trip Total</td><td class="num acct">$18,112–$21,599</td><td>Includes booked airfare, reserved house, and estimated remaining items.</td></tr>
             </tbody>
           </table>
 
           <div class="assumptions-grid">
             <ul class="assumptions">
-              <li>Airfare is booked at $4,067.20 total for 8 Spokane souls.</li>
+              <li>Airfare is booked at $4,067 total for 8 Spokane souls.</li>
               <li>Baggage, flight insurance, GEG parking, lodging, and Florida SUV/car costs are for 8 Spokane souls.</li>
               <li>Disney, Universal, airboat ride, Medieval Times, food, souvenirs, and Orlando activities are for 10 souls including C<sup>2</sup>.</li>
               <li>C<sup>2</sup> does not need airfare, lodging, or rental vehicle coverage.</li>
@@ -1039,7 +1212,7 @@
     </main>
 
     <footer>
-      Last Updated: June 7, 2026
+      Last Updated: June 11, 2026
     </footer>
   </div>
 </body>
