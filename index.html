@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Art & Angie's Disney Retirement Family Trip - Main Planning Version</title>
+  <title>Orlando_family_trip_v2.1_AccommodationLink_Full.html</title>
   <style>
     :root {
       --ink: #243042;
@@ -117,6 +117,19 @@
       margin-top: 2px;
       font-size: 0.94rem;
       color: #fee2e2;
+    }
+    .trip-update .update-list {
+      margin: 4px 0 0;
+      padding-left: 20px;
+      font-size: 0.96rem;
+      font-weight: 700;
+    }
+    .trip-update .update-list li {
+      margin: 3px 0;
+    }
+    .trip-update a {
+      color: #fff7ed;
+      text-decoration: underline;
     }
 
 
@@ -814,11 +827,14 @@
 
     .accommodation-copy p {
       margin: 0 0 12px;
+      padding: 8px 10px;
+      border: 1px solid #d7c49b;
+      border-radius: 9px;
       color: #07336f;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.06rem;
-      font-style: italic;
-      line-height: 1.35;
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 0.94rem;
+      font-style: normal;
+      line-height: 1.32;
     }
 
     .accommodation-link {
@@ -885,7 +901,14 @@
     .section-title-line .accommodation-link {
       margin: 0;
       font-size: 0.95rem;
+      font-weight: 400;
       white-space: nowrap;
+      text-decoration: underline;
+    }
+
+    .accommodation-title-link {
+      color: inherit;
+      text-decoration: none;
     }
 
     .accommodation-media {
@@ -925,6 +948,55 @@
       box-shadow: inset 0 0 0 1px rgba(255,255,255,0.35);
     }
 
+    @media (max-width: 980px) {
+      .accommodation-showcase {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .accommodation-copy {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .section-title-line .accommodation-link {
+        white-space: normal;
+      }
+
+      .accommodation-showcase {
+        grid-template-columns: 1fr;
+      }
+
+      .accommodation-media {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .accommodation-photos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+      }
+
+      .accommodation-photo {
+        min-height: 145px;
+      }
+
+      .accommodation-map {
+        min-height: 260px;
+      }
+
+      .accommodation-features span {
+        white-space: normal;
+      }
+
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    }
+
 
 
 
@@ -956,8 +1028,12 @@
       </div>
 
       <div class="trip-update">
-        <div class="trip-update-head"><strong>Important Trip Update</strong><span class="trip-update-date">June 11, 2026</span></div>
-        <div class="update-line">Flights are booked and the house is reserved for October 5–12, 2026.</div>
+        <div class="trip-update-head"><strong>Latest Updates</strong><span class="trip-update-date">June 12, 2026</span></div>
+        <ul class="update-list">
+          <li>Page layout updated to be more mobile friendly.</li>
+          <li><a href="#accommodations">Rental house reserved</a> for October 5–12, 2026.</li>
+          <li><a href="#flights">Flights booked</a> on Southwest for the Spokane travelers.</li>
+        </ul>
         <div class="update-subline">Current priority: Vehicle Selection.</div>
       </div>
     </header>
@@ -1016,10 +1092,10 @@
 
 
 
-      <section class="feature-section">
+      <section id="accommodations" class="feature-section">
         <div class="section-title-line">
-          <h2>Accommodations</h2>
-          <a class="accommodation-link" href="https://www.vrbo.com/9821898ha">Disney Paradise Villa w/ South Private Pool — details <span class="link-icon" aria-hidden="true">🔗</span></a>
+          <h2><a class="accommodation-title-link" href="https://www.vrbo.com/9821898ha">Disney Paradise Villa w/ South Private Pool</a></h2>
+          <a class="accommodation-link" href="https://www.vrbo.com/9821898ha">Click for details</a>
         </div>
         <div class="card">
           <div class="card-inner">
@@ -1055,7 +1131,7 @@
         </div>
       </section>
 
-      <section class="feature-section">
+      <section id="flights" class="feature-section">
         <div class="flight-title section-title-line">
           <h2>Flights</h2>
           <span>Southwest Airlines</span>
@@ -1168,12 +1244,10 @@
           <li><strong>Medieval Times:</strong> best evening for the dinner show.</li>
         </ul>
       </section>
-<!-- START FINANCIAL SECTION - REMOVE THIS SECTION BEFORE SHARING IF DESIRED -->
-      <!-- END FINANCIAL SECTION - REMOVE THIS SECTION BEFORE SHARING IF DESIRED -->
     </main>
 
     <footer>
-      Last Updated: June 11, 2026
+      Last Updated: June 12, 2026
     </footer>
   </div>
 </body>
