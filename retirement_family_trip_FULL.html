@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orlando_family_trip_v2.1_AccommodationLink_Full.html</title>
+  <title>Orlando_family_trip_v2.5_LatestUpdates_Full.html</title>
   <style>
     :root {
       --ink: #243042;
@@ -991,9 +991,45 @@
       }
 
       table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
+        display: table;
+        table-layout: fixed;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: normal;
+      }
+
+      th,
+      td {
+        white-space: normal;
+        overflow-wrap: anywhere;
+      }
+
+      section.card table {
+        font-size: 0.76rem;
+      }
+
+      section.card th,
+      section.card td {
+        padding: 4px 5px;
+      }
+
+      .week-table {
+        table-layout: fixed;
+        font-size: 0.76rem;
+      }
+
+      .week-table td {
+        padding: 5px 6px;
+      }
+
+      .day-icon {
+        width: 30px;
+        font-size: 1.1rem;
+      }
+
+      .day-date {
+        width: 48px;
+        font-size: 0.68rem;
       }
     }
 
@@ -1028,8 +1064,9 @@
       </div>
 
       <div class="trip-update">
-        <div class="trip-update-head"><strong>Latest Updates</strong><span class="trip-update-date">June 12, 2026</span></div>
+        <div class="trip-update-head"><strong>Latest Updates</strong><span class="trip-update-date">June 13, 2026</span></div>
         <ul class="update-list">
+          <li><a href="#vehicle-rental">Vehicle rental plan updated</a>: Telluride-class large SUV plus Rogue-class smaller SUV recommended.</li>
           <li>Page layout updated to be more mobile friendly.</li>
           <li><a href="#accommodations">Rental house reserved</a> for October 5–12, 2026.</li>
           <li><a href="#flights">Flights booked</a> on Southwest for the Spokane travelers.</li>
@@ -1218,15 +1255,22 @@
 
         </section>
 
-      <section class="two-col">
+      <section id="vehicle-rental" class="two-col">
         <div>
-          <h2>Getting Around</h2>
+          <h2>Vehicle Rental Planning</h2>
           <p>
-            Flights are booked and the house is reserved. Three vehicles will be parked at Spokane airport.
-            In Florida, the working plan is an SUV and car for the Spokane travelers during the main family week.
-            The final vehicle mix can now be confirmed using the reserved house location.
+            Current recommendation: Kia Telluride-class large SUV, or similar, plus Nissan Rogue-class smaller SUV, or similar.
+            This gives the group better flexibility than a minivan, easier parking, better cargo space than SUV plus sedan, and room to split up for different activities.
           </p>
-          <span class="decision">Next step: confirm the SUV/car combination.</span>
+          <ul class="compact-list">
+            <li><strong>Large SUV:</strong> Kia Telluride / Hyundai Palisade / Honda Pilot class.</li>
+            <li><strong>Smaller SUV:</strong> Nissan Rogue / Toyota RAV4 / Honda CR-V class.</li>
+            <li><strong>Why this setup:</strong> one vehicle can carry 6 people when needed, while the second vehicle keeps the schedule flexible.</li>
+            <li><strong>Booking timing:</strong> begin monitoring around July 1, 2026; target first fully cancellable booking in late July through August.</li>
+            <li><strong>Recheck plan:</strong> compare prices every 1–2 weeks, rebook if prices drop, and do a final check 2–3 weeks before departure.</li>
+            <li><strong>Preferred sources:</strong> Costco Travel, National, Enterprise, Hertz, Southwest Cars, and Autoslash for price tracking.</li>
+          </ul>
+          <span class="decision">Reminder: July 1, 2026 — Start tracking Telluride-class and Rogue-class rental rates and begin comparison shopping.</span>
         </div>
 
         <div>
@@ -1238,7 +1282,7 @@
       <section>
         <h2>Open Decisions</h2>
         <ul class="compact-list">
-          <li><strong>Vehicle setup:</strong> final SUV and car arrangement using the reserved house location.</li>
+          <li><strong>Vehicle rental:</strong> monitor rates starting July 1, then reserve a fully cancellable large SUV plus smaller SUV setup.</li>
           <li><strong>Universal:</strong> one park or park-to-park.</li>
           <li><strong>Airboat ride:</strong> operator, ride length, and best day to fit it in.</li>
           <li><strong>Medieval Times:</strong> best evening for the dinner show.</li>
@@ -1288,7 +1332,7 @@
     </main>
 
     <footer>
-      Last Updated: June 12, 2026
+      Last Updated: June 13, 2026
     </footer>
   </div>
 </body>
