@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orlando_family_trip_v2.5_LatestUpdates_Full.html</title>
+  <title>Orlando_family_trip_v3.2_PlanningUpdates_Full.html</title>
   <style>
     :root {
       --ink: #243042;
@@ -58,7 +58,7 @@
     section:last-child { margin-bottom: 0; }
     h2 { margin: 0 0 7px; color: var(--blue); font-size: 1.35rem; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
     h3 { margin: 0 0 4px; font: 700 1rem/1.2 "Segoe UI", Arial, sans-serif; color: #1f2937; }
-    p { margin: 0 0 9px; }.two-col { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 24px; align-items: start; }.group-block { margin-bottom: 12px; }.group-title { color: var(--green); font: 800 0.9rem/1.3 "Segoe UI", Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }.traveler-list { columns: 1; margin: 4px 0 0; padding-left: 18px; }.traveler-list li { margin: 3px 0; }.status-grid {
+    p { margin: 0 0 9px; }.two-col { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 24px; align-items: start; }.vehicle-food-grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 24px; align-items: start; }.food-plan-card { background: #fffaea; border: 1px solid #d7c49b; border-radius: 12px; padding: 12px 14px; box-shadow: 0 6px 16px rgba(80, 60, 30, 0.07); }.food-plan-card h2 { margin-top: 0; }.group-block { margin-bottom: 12px; }.group-title { color: var(--green); font: 800 0.9rem/1.3 "Segoe UI", Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }.traveler-list { columns: 1; margin: 4px 0 0; padding-left: 18px; }.traveler-list li { margin: 3px 0; }.status-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 8px;
@@ -771,6 +771,14 @@
       font-weight: 900;
     }
 
+
+
+    section.money th:nth-child(2),
+    section.money td:nth-child(2) {
+      width: 100px;
+      min-width: 100px;
+      white-space: nowrap;
+    }
     section.money .assumptions-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1037,7 +1045,7 @@
 
 
     @media (max-width: 760px) {.page { padding: 16px; }
-      main { padding: 18px; }.two-col,.itinerary { grid-template-columns: 1fr; }.assumptions { columns: 1; }.itinerary.what { padding-bottom: 12px; }
+      main { padding: 18px; }.two-col,.vehicle-food-grid,.itinerary { grid-template-columns: 1fr; }.assumptions { columns: 1; }.itinerary.what { padding-bottom: 12px; }
     }
     @media print {
       body { background: white; }.page { max-width: none; padding: 0.35in; }
@@ -1064,12 +1072,9 @@
       </div>
 
       <div class="trip-update">
-        <div class="trip-update-head"><strong>Latest Updates</strong><span class="trip-update-date">June 13, 2026</span></div>
+        <div class="trip-update-head"><strong>Latest Updates</strong><span class="trip-update-date">July 1, 2026</span></div>
         <ul class="update-list">
-          <li><a href="#vehicle-rental">Vehicle rental plan updated</a>: Telluride-class large SUV plus Rogue-class smaller SUV recommended.</li>
-          <li>Page layout updated to be more mobile friendly.</li>
-          <li><a href="#accommodations">Rental house reserved</a> for October 5–12, 2026.</li>
-          <li><a href="#flights">Flights booked</a> on Southwest for the Spokane travelers.</li>
+          <li><a href="#flights">Southwest revised the flight schedule</a>: the outbound flight now leaves at 5:00 AM instead of 6:30 AM, about 1 1/2 hours earlier, and connects through Las Vegas instead of Denver. Return times also changed, and seat assignments need to be checked.</li>
         </ul>
         <div class="update-subline">Current priority: Vehicle Selection.</div>
       </div>
@@ -1181,8 +1186,8 @@
                 <tr><th>Flight</th><th>Route</th><th>Depart</th><th>Arrive</th><th>Seats</th><th>Notes</th></tr>
               </thead>
               <tbody>
-                <tr><td>Southwest 1935</td><td>GEG → DEN</td><td>6:30 AM</td><td>9:45 AM</td><td>Rows 21, 22</td><td>Layover in Denver: 2 hr 10 min</td></tr>
-                <tr><td>Southwest 1669</td><td>DEN → MCO</td><td>11:55 AM</td><td>5:30 PM</td><td>Rows 18, 19</td><td></td></tr>
+                <tr><td>Southwest 4457</td><td>GEG → LAS</td><td>5:00 AM</td><td>7:20 AM</td><td>Rows 22, 23</td><td>Layover in Las Vegas: 3 hr 10 min</td></tr>
+                <tr><td>Southwest 1797</td><td>LAS → MCO</td><td>10:30 AM</td><td>5:55 PM</td><td>Rows 22, 23</td><td></td></tr>
               </tbody>
             </table>
 
@@ -1192,8 +1197,8 @@
                 <tr><th>Flight</th><th>Route</th><th>Depart</th><th>Arrive</th><th>Seats</th><th>Notes</th></tr>
               </thead>
               <tbody>
-                <tr><td>Southwest 2794</td><td>MCO → SAN</td><td>6:45 AM</td><td>8:55 AM</td><td>Rows 18, 19</td><td>Layover in San Diego: 2 hr 5 min</td></tr>
-                <tr><td>Southwest 955</td><td>SAN → GEG</td><td>11:00 AM</td><td>1:45 PM</td><td>Rows 17, 18</td><td></td></tr>
+                <tr><td>Southwest 2825</td><td>MCO → SAN</td><td>7:50 AM</td><td>10:00 AM</td><td>Rows 22, 23</td><td>Layover in San Diego: 1 hr 15 min</td></tr>
+                <tr><td>Southwest 955</td><td>SAN → GEG</td><td>11:15 AM</td><td>2:05 PM</td><td>Rows 17, 18</td><td></td></tr>
               </tbody>
             </table>
 
@@ -1201,27 +1206,27 @@
               <summary>Assigned Seat Maps</summary>
               <div class="seat-cards">
                 <div class="seat-card">
-                  <h3>GEG → DEN</h3>
-                  <span class="rows">Rows 21, 22</span>
+                  <h3>GEG → LAS</h3>
+                  <span class="rows">Rows 22, 23</span>
                   <div class="seat-labels"><span>A</span><span>B</span><span>C</span><span></span><span>D</span><span>E</span><span>F</span></div>
-                  <div class="seat-row"><span class="seat">A</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">21</span><span class="seat">D</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
-                  <div class="seat-row"><span class="seat">A</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">22</span><span class="seat">D</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
+                  <div class="seat-row"><span class="seat">A</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">22</span><span class="seat">D</span><span class="seat">E</span><span class="seat">F</span></div>
+                  <div class="seat-row"><span class="seat unused">×</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">23</span><span class="seat unused">×</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
                 </div>
 
                 <div class="seat-card">
-                  <h3>DEN → MCO</h3>
-                  <span class="rows">Rows 18, 19</span>
+                  <h3>LAS → MCO</h3>
+                  <span class="rows">Rows 22, 23</span>
                   <div class="seat-labels"><span>A</span><span>B</span><span>C</span><span></span><span>D</span><span>E</span><span>F</span></div>
-                  <div class="seat-row"><span class="seat">A</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">18</span><span class="seat">D</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
-                  <div class="seat-row"><span class="seat">A</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">19</span><span class="seat">D</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
+                  <div class="seat-row"><span class="seat unused">×</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">22</span><span class="seat unused">×</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
+                  <div class="seat-row"><span class="seat">A</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">23</span><span class="seat">D</span><span class="seat">E</span><span class="seat">F</span></div>
                 </div>
 
                 <div class="seat-card">
                   <h3>MCO → SAN</h3>
-                  <span class="rows">Rows 18, 19</span>
+                  <span class="rows">Rows 22, 23</span>
                   <div class="seat-labels"><span>A</span><span>B</span><span>C</span><span></span><span>D</span><span>E</span><span>F</span></div>
-                  <div class="seat-row"><span class="seat">A</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">18</span><span class="seat">D</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
-                  <div class="seat-row"><span class="seat">A</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">19</span><span class="seat">D</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
+                  <div class="seat-row"><span class="seat">A</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">22</span><span class="seat">D</span><span class="seat">E</span><span class="seat">F</span></div>
+                  <div class="seat-row"><span class="seat unused">×</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">23</span><span class="seat unused">×</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
                 </div>
 
                 <div class="seat-card">
@@ -1233,6 +1238,7 @@
                 </div>
               </div>
               <div class="seat-note">Seat maps not to scale. Arrangement varies by aircraft. Aisle is between C and D.</div>
+              <div class="note"><strong>Seat assignment reminder:</strong> Check Southwest seat assignments periodically after the schedule change. Preferred layout is two consecutive rows with four seats each (4+4) so nobody has a middle seat next to a stranger.</div>
             </details>
           </div>
         </div>
@@ -1242,38 +1248,53 @@
           <h2>Week-at-a-Glance Itinerary</h2>
           <table class="week-table">
             <tbody>
-              <tr><td class="day-icon">✈️</td><td class="day-date">Mon<br>Oct 5</td><td><strong>Travel Day</strong> — The Travelers fly Southwest to Orlando, arriving at 5:30 PM, then picks up the SUV and car and gets settled near Kissimmee.</td></tr>
+              <tr><td class="day-icon">✈️</td><td class="day-date">Mon<br>Oct 5</td><td><strong>Travel Day</strong> — The Travelers fly Southwest to Orlando, arriving at 5:55 PM, then pick up the SUVs and get settled near Kissimmee.</td></tr>
               <tr><td class="day-icon">🏡</td><td class="day-date">Arrival</td><td><strong>Settle in near C<sup>2</sup></strong> — Unpack, meet up with Cathy and Charlie, swim, visit, and start the week without everyone living out of suitcases.</td></tr>
               <tr><td class="day-icon">🏰</td><td class="day-date">Weekdays</td><td><strong>Two Disney World park days</strong> — Two weekday Disney park days are planned for the full Orlando group, including C<sup>2</sup>.</td></tr>
               <tr><td class="day-icon">🎢</td><td class="day-date">Park Day</td><td><strong>Universal Studios</strong> — One-day outing in the working plan. Decision: one park or park-to-park.</td></tr>
               <tr><td class="day-icon">🐊</td><td class="day-date">Florida</td><td><strong>Recommended airboat ride</strong> — Kissimmee-area airboat ride with open water, wildlife, birds, and possible alligator sightings.</td></tr>
               <tr><td class="day-icon">⚔️</td><td class="day-date">Evening</td><td><strong>Medieval Times dinner show, or similar</strong> — Family dinner show with knights, horses, jousting, cheering sections, and a full meal.</td></tr>
               <tr><td class="day-icon">☀️</td><td class="day-date">Downtime</td><td><strong>Pool, breakfasts, meals, and time with C<sup>2</sup></strong> — House breakfasts, casual meals, park lunches, and family time.</td></tr>
-              <tr><td class="day-icon">🧳</td><td class="day-date">Mon<br>Oct 12</td><td><strong>Return</strong> — The Travelers return home, arriving back in Spokane at 1:45 PM. Art and Angie can later adjust their return flight for the extra Florida week.</td></tr>
+              <tr><td class="day-icon">🧳</td><td class="day-date">Mon<br>Oct 12</td><td><strong>Return</strong> — The Travelers return home, arriving back in Spokane at 2:05 PM. Art and Angie can later adjust their return flight for the extra Florida week.</td></tr>
             </tbody>
           </table>
 
         </section>
 
-      <section id="vehicle-rental" class="two-col">
+      <section id="vehicle-rental" class="vehicle-food-grid">
         <div>
           <h2>Vehicle Rental Planning</h2>
           <p>
-            Current recommendation: Kia Telluride-class large SUV, or similar, plus Nissan Rogue-class smaller SUV, or similar.
-            This gives the group better flexibility than a minivan, easier parking, better cargo space than SUV plus sedan, and room to split up for different activities.
+            Current recommendation: Kia Telluride-class large SUV, or similar, plus Nissan Rogue-class smaller SUV, or similar. This gives the group better flexibility than a minivan, easier parking, better cargo space than SUV plus sedan, and room to split up for different activities.
           </p>
           <ul class="compact-list">
-            <li><strong>Large SUV:</strong> Kia Telluride / Hyundai Palisade / Honda Pilot class.</li>
-            <li><strong>Smaller SUV:</strong> Nissan Rogue / Toyota RAV4 / Honda CR-V class.</li>
-            <li><strong>Why this setup:</strong> one vehicle can carry 6 people when needed, while the second vehicle keeps the schedule flexible.</li>
-            <li><strong>Booking timing:</strong> begin monitoring around July 1, 2026; target first fully cancellable booking in late July through August.</li>
-            <li><strong>Recheck plan:</strong> compare prices every 1–2 weeks, rebook if prices drop, and do a final check 2–3 weeks before departure.</li>
-            <li><strong>Preferred sources:</strong> Costco Travel, National, Enterprise, Hertz, Southwest Cars, and Autoslash for price tracking.</li>
+            <li><strong>Large SUV (Standard Elite SUV class):</strong> Recommended: Kia Telluride, Hyundai Palisade, or Honda Pilot.</li>
+            <li><strong>Compact SUV:</strong> Recommended: Nissan Rogue, Toyota RAV4, or Honda CR-V.</li>
+            <li><strong>Luxury SUV (Art &amp; Angie’s extra week):</strong> Recommended: Genesis GV70 or similar.</li>
+            <li><strong>Group flexibility:</strong> two SUVs allow the group to split for different activities while still letting one vehicle carry 6 people when needed.</li>
           </ul>
-          <span class="decision">Reminder: July 1, 2026 — Start tracking Telluride-class and Rogue-class rental rates and begin comparison shopping.</span>
+
+          <h3>Rental Timing</h3>
+          <ul class="compact-list">
+            <li>Begin monitoring prices around July 1, 2026.</li>
+            <li>First booking target: late July through August 2026.</li>
+            <li>Reserve a fully cancellable rate.</li>
+            <li>Recheck prices every 1–2 weeks and rebook if prices drop.</li>
+            <li>Final price check 2–3 weeks before departure.</li>
+          </ul>
+
+          <h3>Preferred Booking Sources</h3>
+          <ol class="compact-list">
+            <li><a href="https://www.costcotravel.com/Rental-Cars" target="_blank" rel="noopener">Costco Travel</a></li>
+            <li><a href="https://www.autoslash.com/" target="_blank" rel="noopener">AutoSlash</a> for price tracking</li>
+            <li><a href="https://www.hertz.com/" target="_blank" rel="noopener">Hertz</a> — check Charlie’s discount</li>
+            <li><a href="https://www.nationalcar.com/" target="_blank" rel="noopener">National</a></li>
+            <li><a href="https://www.enterprise.com/" target="_blank" rel="noopener">Enterprise</a></li>
+          </ol>
+          <span class="decision">Reminder: July 1, 2026 — Start tracking Large SUV (Standard Elite SUV class), Compact SUV, and Luxury SUV / Genesis GV70-class rental rates and begin comparison shopping.</span>
         </div>
 
-        <div>
+        <div class="food-plan-card">
           <h2>Food Plan</h2>
           <p>Breakfasts will mostly be simple rented-house food. Park lunches happen on park days, with casual restaurants, meals at the house, and some dinners or evenings with C<sup>2</sup> filling in the rest of the week.</p>
         </div>
@@ -1282,18 +1303,17 @@
       <section>
         <h2>Open Decisions</h2>
         <ul class="compact-list">
-          <li><strong>Vehicle rental:</strong> monitor rates starting July 1, then reserve a fully cancellable large SUV plus smaller SUV setup.</li>
+          <li><strong>Seat assignments:</strong> check Southwest seats and try to move to two consecutive rows of four (4+4) instead of the current 6+2 layout.</li>
+          <li><strong>Vehicle rental:</strong> monitor rates starting July 1, then reserve a fully cancellable Large SUV (Standard Elite SUV class) plus Compact SUV for the main week, and a Luxury SUV / Genesis GV70-class vehicle for Art and Angie’s extra week.</li>
           <li><strong>Universal:</strong> one park or park-to-park.</li>
           <li><strong>Airboat ride:</strong> operator, ride length, and best day to fit it in.</li>
           <li><strong>Medieval Times:</strong> best evening for the dinner show.</li>
         </ul>
       </section>
-
     </main>
 
     <footer>
-      Last Updated: June 13, 2026
-    </footer>
+      Last Updated: July 1, 2026</footer>
   </div>
 </body>
 </html>
