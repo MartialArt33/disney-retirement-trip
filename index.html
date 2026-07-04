@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orlando_family_trip_v3.2_PlanningUpdates_Full.html</title>
+  <title>Orlando_family_trip_v3.6_VehicleReservations_Full.html</title>
   <style>
     :root {
       --ink: #243042;
@@ -58,7 +58,7 @@
     section:last-child { margin-bottom: 0; }
     h2 { margin: 0 0 7px; color: var(--blue); font-size: 1.35rem; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
     h3 { margin: 0 0 4px; font: 700 1rem/1.2 "Segoe UI", Arial, sans-serif; color: #1f2937; }
-    p { margin: 0 0 9px; }.two-col { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 24px; align-items: start; }.vehicle-food-grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 24px; align-items: start; }.food-plan-card { background: #fffaea; border: 1px solid #d7c49b; border-radius: 12px; padding: 12px 14px; box-shadow: 0 6px 16px rgba(80, 60, 30, 0.07); }.food-plan-card h2 { margin-top: 0; }.group-block { margin-bottom: 12px; }.group-title { color: var(--green); font: 800 0.9rem/1.3 "Segoe UI", Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }.traveler-list { columns: 1; margin: 4px 0 0; padding-left: 18px; }.traveler-list li { margin: 3px 0; }.status-grid {
+    p { margin: 0 0 9px; }.two-col { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 24px; align-items: start; }.planning-food-grid { display: grid; grid-template-columns: 1fr 0.75fr; gap: 24px; align-items: start; }.vehicle-rental-full { display: block; }.food-plan-card { background: #fffaea; border: 1px solid #d7c49b; border-radius: 12px; padding: 12px 14px; margin-top: 36px; box-shadow: 0 6px 16px rgba(80, 60, 30, 0.07); }.food-plan-card h2 { margin-top: 0; }.group-block { margin-bottom: 12px; }.group-title { color: var(--green); font: 800 0.9rem/1.3 "Segoe UI", Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }.traveler-list { columns: 1; margin: 4px 0 0; padding-left: 18px; }.traveler-list li { margin: 3px 0; }.status-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 8px;
@@ -742,6 +742,8 @@
       font-weight: 900;
     }
 
+    section.money .count-col { width: 100px; }
+
     section.money table {
       width: 100%;
       border-collapse: collapse;
@@ -888,6 +890,18 @@
       border-left: 6px solid #d97706;
       background: linear-gradient(180deg, rgba(255, 253, 248, 0.98), rgba(255, 247, 223, 0.72));
       box-shadow: 0 10px 24px rgba(80, 60, 30, 0.10);
+    }
+
+
+    .vehicles-budget-section > .card {
+      border: 1px solid #d9bf83;
+      border-left: 6px solid #d97706;
+      background: linear-gradient(180deg, rgba(255, 253, 248, 0.98), rgba(255, 247, 223, 0.72));
+      box-shadow: 0 10px 24px rgba(80, 60, 30, 0.10);
+    }
+
+    .vehicles-budget-section table {
+      margin-top: 8px;
     }
 
     .section-title-line {
@@ -1045,7 +1059,7 @@
 
 
     @media (max-width: 760px) {.page { padding: 16px; }
-      main { padding: 18px; }.two-col,.vehicle-food-grid,.itinerary { grid-template-columns: 1fr; }.assumptions { columns: 1; }.itinerary.what { padding-bottom: 12px; }
+      main { padding: 18px; }.two-col,.planning-food-grid,.itinerary { grid-template-columns: 1fr; }.food-plan-card { margin-top: 0; }.assumptions { columns: 1; }.itinerary.what { padding-bottom: 12px; }
     }
     @media print {
       body { background: white; }.page { max-width: none; padding: 0.35in; }
@@ -1072,11 +1086,11 @@
       </div>
 
       <div class="trip-update">
-        <div class="trip-update-head"><strong>Latest Updates</strong><span class="trip-update-date">July 1, 2026</span></div>
+        <div class="trip-update-head"><strong>Latest Updates</strong><span class="trip-update-date">July 3, 2026</span></div>
         <ul class="update-list">
-          <li><a href="#flights">Southwest revised the flight schedule</a>: the outbound flight now leaves at 5:00 AM instead of 6:30 AM, about 1 1/2 hours earlier, and connects through Las Vegas instead of Denver. Return times also changed, and seat assignments need to be checked.</li>
+          <li><a href="#vehicle-rental">Vehicle rentals are reserved</a>: two family-week vehicles and the extra-week couple car are booked through Costco/Budget. Enter all three into AutoSlash and keep watching for better fully cancellable rates.</li>
         </ul>
-        <div class="update-subline">Current priority: Vehicle Selection.</div>
+        <div class="update-subline">Current priority: Disney Tickets.</div>
       </div>
     </header>
 
@@ -1119,17 +1133,23 @@
       </section>
 
 
-      <section>
-        <h2>Planning Status</h2>
-        <ul class="compact-list status-list" style="list-style: none; padding-left: 0;">
-          <li class="done">✅ ✈️ <strong>Flights Booked</strong> — Southwest Choice</li>
-          <li class="done">✅ 🏠 <strong>Rental House Reserved</strong> — Disney Paradise Villa.</li>
-          <li>🚙 <strong>Vehicle Selection</strong> — Current priority.</li>
-          <li>🎟️ <strong>Disney Tickets</strong> — Pending.</li>
-          <li>🎢 <strong>Universal Studios</strong> — Pending.</li>
-          <li>🐊 <strong>Airboat Adventure</strong> — Pending.</li>
-          <li>🏰 <strong>Medieval Times dinner show, or similar</strong> — Pending.</li>
-        </ul>
+      <section class="planning-food-grid">
+        <div>
+          <h2>Planning Status</h2>
+          <ul class="compact-list status-list" style="list-style: none; padding-left: 0;">
+            <li class="done">✅ ✈️ <strong>Flights Booked</strong> — Southwest Choice</li>
+            <li class="done">✅ 🏠 <strong>Rental House Reserved</strong> — Disney Paradise Villa.</li>
+            <li class="done">✅ 🚙 <strong>Vehicle Selection</strong> — Reserved through Costco/Budget.</li>
+            <li>🎟️ <strong>Disney Tickets</strong> — Current priority.</li>
+            <li>🎢 <strong>Universal Studios</strong> — Pending.</li>
+            <li>🐊 <strong>Airboat Adventure</strong> — Pending.</li>
+            <li>🏰 <strong>Medieval Times dinner show</strong> — Pending.</li>
+          </ul>
+        </div>
+        <div class="food-plan-card">
+          <h2>Food Plan</h2>
+          <p>Breakfasts will mostly be simple rented-house food. Park lunches happen on park days, with casual restaurants, meals at the house, and some dinners or evenings with C<sup>2</sup> filling in the rest of the week.</p>
+        </div>
       </section>
 
 
@@ -1243,6 +1263,37 @@
           </div>
         </div>
       </section>
+      <section id="vehicle-rental" class="vehicles-budget-section">
+        <div class="flight-title section-title-line">
+          <h2>Vehicles</h2>
+          <span>Budget</span>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+          <p>
+            Three vehicles are currently reserved: two for the main family week and one for Art &amp; Angie’s extra week. The family-week mix gives us one mid-size SUV and one full-size SUV, which should cover people, luggage, grocery runs, park days, and the inevitable “who needs to leave early?” split without forcing everyone into one vehicle.
+          </p>
+          <p>
+            Reservations are through <a href="https://www.costcotravel.com/Rental-Cars" target="_blank" rel="noopener">Costco Travel</a> / <a href="https://www.budget.com/" target="_blank" rel="noopener">Budget</a>. Enter all three into <a href="https://www.autoslash.com/" target="_blank" rel="noopener">AutoSlash</a> for price tracking, then rebook only if a better fully cancellable rate shows up.
+          </p>
+
+          <h3>Reserved Vehicles</h3>
+          <table>
+            <thead>
+              <tr><th>Vehicle</th><th>Dates</th><th>Category</th><th>Costco<br>Conf #</th><th>Budget<br>Conf #</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Mid-size SUV</td><td>10/05/26, 5:00 PM → 10/12/26, 12:00 PM</td><td>Intermediate SUV — Mazda CX-50 or similar</td><td><strong>C495101876</strong></td><td><strong>49155282US1</strong></td></tr>
+              <tr><td>Full-size SUV</td><td>10/05/26, 5:00 PM → 10/12/26, 12:00 PM</td><td>Standard Elite SUV — Ford Explorer or similar</td><td><strong>C495101877</strong></td><td><strong>49155378US9</strong></td></tr>
+              <tr><td>Sporty Car</td><td>10/12/26, 8:00 AM → 10/19/26, 12:00 PM</td><td>Standard Sporty Car — Ford Mustang Coupe or similar</td><td><strong>C495106863</strong></td><td><strong>49157963US1</strong></td></tr>
+            </tbody>
+          </table>
+          <span class="decision">Reminder: enter all three reservations into AutoSlash, then create an email folder named “Orlando Car Rentals 2026” to collect price-drop notifications and keep the rebooking history together.</span>
+          </div>
+        </div>
+      </section>
+
+
 
       <section>
           <h2>Week-at-a-Glance Itinerary</h2>
@@ -1253,7 +1304,7 @@
               <tr><td class="day-icon">🏰</td><td class="day-date">Weekdays</td><td><strong>Two Disney World park days</strong> — Two weekday Disney park days are planned for the full Orlando group, including C<sup>2</sup>.</td></tr>
               <tr><td class="day-icon">🎢</td><td class="day-date">Park Day</td><td><strong>Universal Studios</strong> — One-day outing in the working plan. Decision: one park or park-to-park.</td></tr>
               <tr><td class="day-icon">🐊</td><td class="day-date">Florida</td><td><strong>Recommended airboat ride</strong> — Kissimmee-area airboat ride with open water, wildlife, birds, and possible alligator sightings.</td></tr>
-              <tr><td class="day-icon">⚔️</td><td class="day-date">Evening</td><td><strong>Medieval Times dinner show, or similar</strong> — Family dinner show with knights, horses, jousting, cheering sections, and a full meal.</td></tr>
+              <tr><td class="day-icon">⚔️</td><td class="day-date">Evening</td><td><strong>Medieval Times dinner show</strong> — Family dinner show with knights, horses, jousting, cheering sections, and a full meal.</td></tr>
               <tr><td class="day-icon">☀️</td><td class="day-date">Downtime</td><td><strong>Pool, breakfasts, meals, and time with C<sup>2</sup></strong> — House breakfasts, casual meals, park lunches, and family time.</td></tr>
               <tr><td class="day-icon">🧳</td><td class="day-date">Mon<br>Oct 12</td><td><strong>Return</strong> — The Travelers return home, arriving back in Spokane at 2:05 PM. Art and Angie can later adjust their return flight for the extra Florida week.</td></tr>
             </tbody>
@@ -1261,59 +1312,21 @@
 
         </section>
 
-      <section id="vehicle-rental" class="vehicle-food-grid">
-        <div>
-          <h2>Vehicle Rental Planning</h2>
-          <p>
-            Current recommendation: Kia Telluride-class large SUV, or similar, plus Nissan Rogue-class smaller SUV, or similar. This gives the group better flexibility than a minivan, easier parking, better cargo space than SUV plus sedan, and room to split up for different activities.
-          </p>
-          <ul class="compact-list">
-            <li><strong>Large SUV (Standard Elite SUV class):</strong> Recommended: Kia Telluride, Hyundai Palisade, or Honda Pilot.</li>
-            <li><strong>Compact SUV:</strong> Recommended: Nissan Rogue, Toyota RAV4, or Honda CR-V.</li>
-            <li><strong>Luxury SUV (Art &amp; Angie’s extra week):</strong> Recommended: Genesis GV70 or similar.</li>
-            <li><strong>Group flexibility:</strong> two SUVs allow the group to split for different activities while still letting one vehicle carry 6 people when needed.</li>
-          </ul>
-
-          <h3>Rental Timing</h3>
-          <ul class="compact-list">
-            <li>Begin monitoring prices around July 1, 2026.</li>
-            <li>First booking target: late July through August 2026.</li>
-            <li>Reserve a fully cancellable rate.</li>
-            <li>Recheck prices every 1–2 weeks and rebook if prices drop.</li>
-            <li>Final price check 2–3 weeks before departure.</li>
-          </ul>
-
-          <h3>Preferred Booking Sources</h3>
-          <ol class="compact-list">
-            <li><a href="https://www.costcotravel.com/Rental-Cars" target="_blank" rel="noopener">Costco Travel</a></li>
-            <li><a href="https://www.autoslash.com/" target="_blank" rel="noopener">AutoSlash</a> for price tracking</li>
-            <li><a href="https://www.hertz.com/" target="_blank" rel="noopener">Hertz</a> — check Charlie’s discount</li>
-            <li><a href="https://www.nationalcar.com/" target="_blank" rel="noopener">National</a></li>
-            <li><a href="https://www.enterprise.com/" target="_blank" rel="noopener">Enterprise</a></li>
-          </ol>
-          <span class="decision">Reminder: July 1, 2026 — Start tracking Large SUV (Standard Elite SUV class), Compact SUV, and Luxury SUV / Genesis GV70-class rental rates and begin comparison shopping.</span>
-        </div>
-
-        <div class="food-plan-card">
-          <h2>Food Plan</h2>
-          <p>Breakfasts will mostly be simple rented-house food. Park lunches happen on park days, with casual restaurants, meals at the house, and some dinners or evenings with C<sup>2</sup> filling in the rest of the week.</p>
-        </div>
-      </section>
-
       <section>
         <h2>Open Decisions</h2>
         <ul class="compact-list">
           <li><strong>Seat assignments:</strong> check Southwest seats and try to move to two consecutive rows of four (4+4) instead of the current 6+2 layout.</li>
-          <li><strong>Vehicle rental:</strong> monitor rates starting July 1, then reserve a fully cancellable Large SUV (Standard Elite SUV class) plus Compact SUV for the main week, and a Luxury SUV / Genesis GV70-class vehicle for Art and Angie’s extra week.</li>
+          <li><strong>Vehicle rentals:</strong> enter all three reservations into AutoSlash, watch for price drops, and rebook if a better fully cancellable rate appears.</li>
           <li><strong>Universal:</strong> one park or park-to-park.</li>
           <li><strong>Airboat ride:</strong> operator, ride length, and best day to fit it in.</li>
           <li><strong>Medieval Times:</strong> best evening for the dinner show.</li>
         </ul>
       </section>
+
     </main>
 
     <footer>
-      Last Updated: July 1, 2026</footer>
+      Last Updated: July 3, 2026</footer>
   </div>
 </body>
 </html>
