@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<!-- Official planning version last updated on 2026-07-10. Includes financial planning section. -->
+<!-- Official planning version updated by Art Malin on 2026-08-01. Includes financial planning section. -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏰</text></svg>" />
   <title>Retirement Family Trip FULL</title>
   <style>
     :root {
@@ -1067,13 +1066,118 @@
       main { box-shadow: none; border: none; padding: 0; }
       section { break-inside: avoid; }.money { break-before: page; }
     }
+
+
+    /* Park options */
+    .park-comparison {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    .park-comparison h3 {
+      margin: 0 0 5px;
+      color: var(--blue);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.15rem;
+    }
+
+    .park-intro,
+    .park-combination {
+      margin: 0 0 10px;
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 0.88rem;
+      line-height: 1.32;
+    }
+
+    .park-intro { color: var(--muted); }
+    .park-combination { color: #475569; }
+
+    .park-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .park-card {
+      --park-brand: var(--blue);
+      --park-bg: #eef6ff;
+      display: grid;
+      grid-template-columns: minmax(210px, 1fr) minmax(260px, 2fr);
+      gap: 6px 12px;
+      align-items: center;
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--park-brand);
+      border-radius: 10px;
+      background: var(--park-bg);
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 0.88rem;
+      line-height: 1.24;
+    }
+
+    .park-card.universal {
+      --park-brand: #68429a;
+      --park-bg: #f5f0fb;
+    }
+
+    .park-name {
+      color: #15395b;
+      font-size: 0.98rem;
+      font-weight: 400;
+      text-decoration: none;
+    }
+
+    .park-name:hover,
+    .park-name:focus { text-decoration: underline; }
+
+    .park-description { color: #344054; }
+
+    .park-note {
+      grid-column: 1 / -1;
+      margin-top: -1px;
+      color: #7c4a03;
+      font-size: 0.8rem;
+    }
+
+    details.other-parks {
+      margin-top: 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fffaf0;
+      overflow: hidden;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    details.other-parks > summary {
+      cursor: pointer;
+      padding: 9px 11px;
+      color: #15395b;
+      font-weight: 900;
+      background: #f7ead1;
+    }
+
+    details.other-parks .park-list { padding: 8px; }
+
+    @media (max-width: 720px) {
+      .park-card {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        padding: 9px;
+      }
+
+      .park-description,
+      .park-note { grid-column: 1; }
+
+      .park-note { margin-top: 0; }
+    }
+
   </style>
 </head>
 <body>
   <div class="page">
     <header>
       <div class="eyebrow">October 2026 • Orlando / Kissimmee</div>
-      <h1>Retirement Family Trip FULL</h1>
+      <h1>Disneyworld Family Trip</h1>
       <p class="subtitle">
         A family week in Orlando where everyone gets together with Cathy and Charlie, celebrates
         Grand/Dad’s retirement this fall, and adds Disney World, Universal, and a few classic
@@ -1087,9 +1191,9 @@
       </div>
 
       <div class="trip-update">
-        <div class="trip-update-head"><strong>Latest Updates</strong><span class="trip-update-date">July 10, 2026</span></div>
+        <div class="trip-update-head"><strong>Latest Updates</strong><span class="trip-update-date">August 2, 2026</span></div>
         <ul class="update-list">
-          <li><a href="#flights">Southwest seat assignments updated</a>: the latest assignments are reflected in all four flight-leg seat maps below.</li>
+          <li><a href="#itinerary">Park schedule selected</a>: Tuesday is reserved for rest and recovery, followed by Epic Universe on Wednesday, Hollywood Studios on Thursday, and Animal Kingdom on Friday.</li>
         </ul>
         <div class="update-subline">Current priority: Disney Tickets.</div>
       </div>
@@ -1141,9 +1245,9 @@
             <li class="done">✅ ✈️ <strong>Flights Booked</strong> — Southwest Choice</li>
             <li class="done">✅ 🏠 <strong>Rental House Reserved</strong> — Disney Paradise Villa.</li>
             <li class="done">✅ 🚙 <strong>Vehicle Selection</strong> — Reserved through Costco/Budget.</li>
-            <li class="done">✅ 💺 <strong>Seat Assignments Updated</strong> — Latest assignments recorded.</li>
-            <li>🎟️ <strong>Disney Tickets</strong> — Pending.</li>
-            <li>🎢 <strong>Universal Studios</strong> — Pending.</li>
+            <li class="done">✅ 💺 <strong>Seat Assignments</strong> — Updated after the flight routing changes.</li>
+            <li>🎟️ <strong>Disney Tickets</strong> — Current priority.</li>
+            <li>🎢 <strong>Universal Epic Universe</strong> — Selected; tickets pending.</li>
             <li>🐊 <strong>Airboat Adventure</strong> — Pending.</li>
             <li>🏰 <strong>Medieval Times dinner show</strong> — Pending.</li>
           </ul>
@@ -1208,8 +1312,8 @@
                 <tr><th>Flight</th><th>Route</th><th>Depart</th><th>Arrive</th><th>Seats</th><th>Notes</th></tr>
               </thead>
               <tbody>
-                <tr><td>Southwest 4457</td><td>GEG → LAS</td><td>5:00 AM</td><td>7:20 AM</td><td>Rows 24, 25</td><td>Layover in Las Vegas: 3 hr 10 min</td></tr>
-                <tr><td>Southwest 1797</td><td>LAS → MCO</td><td>10:30 AM</td><td>5:55 PM</td><td>Rows 23, 24</td><td></td></tr>
+                <tr><td>Southwest 4457</td><td>GEG → LAS</td><td>5:00 AM</td><td>7:20 AM</td><td>Rows 22, 23</td><td>Layover in Las Vegas: 3 hr 10 min</td></tr>
+                <tr><td>Southwest 1797</td><td>LAS → MCO</td><td>10:30 AM</td><td>5:55 PM</td><td>Rows 22, 23</td><td></td></tr>
               </tbody>
             </table>
 
@@ -1220,7 +1324,7 @@
               </thead>
               <tbody>
                 <tr><td>Southwest 2825</td><td>MCO → SAN</td><td>7:50 AM</td><td>10:00 AM</td><td>Rows 22, 23</td><td>Layover in San Diego: 1 hr 15 min</td></tr>
-                <tr><td>Southwest 955</td><td>SAN → GEG</td><td>11:15 AM</td><td>2:05 PM</td><td>Rows 24, 25</td><td></td></tr>
+                <tr><td>Southwest 955</td><td>SAN → GEG</td><td>11:15 AM</td><td>2:05 PM</td><td>Rows 17, 18</td><td></td></tr>
               </tbody>
             </table>
 
@@ -1229,18 +1333,18 @@
               <div class="seat-cards">
                 <div class="seat-card">
                   <h3>GEG → LAS</h3>
-                  <span class="rows">Rows 24, 25</span>
+                  <span class="rows">Rows 22, 23</span>
                   <div class="seat-labels"><span>A</span><span>B</span><span>C</span><span></span><span>D</span><span>E</span><span>F</span></div>
-                  <div class="seat-row"><span class="seat">A</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">24</span><span class="seat">D</span><span class="seat">E</span><span class="seat">F</span></div>
-                  <div class="seat-row"><span class="seat unused">×</span><span class="seat unused">×</span><span class="seat">C</span><span class="row-num">25</span><span class="seat">D</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
+                  <div class="seat-row"><span class="seat">A</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">22</span><span class="seat">D</span><span class="seat">E</span><span class="seat">F</span></div>
+                  <div class="seat-row"><span class="seat unused">×</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">23</span><span class="seat unused">×</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
                 </div>
 
                 <div class="seat-card">
                   <h3>LAS → MCO</h3>
-                  <span class="rows">Rows 23, 24</span>
+                  <span class="rows">Rows 22, 23</span>
                   <div class="seat-labels"><span>A</span><span>B</span><span>C</span><span></span><span>D</span><span>E</span><span>F</span></div>
+                  <div class="seat-row"><span class="seat unused">×</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">22</span><span class="seat unused">×</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
                   <div class="seat-row"><span class="seat">A</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">23</span><span class="seat">D</span><span class="seat">E</span><span class="seat">F</span></div>
-                  <div class="seat-row"><span class="seat unused">×</span><span class="seat unused">×</span><span class="seat">C</span><span class="row-num">24</span><span class="seat">D</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
                 </div>
 
                 <div class="seat-card">
@@ -1248,18 +1352,19 @@
                   <span class="rows">Rows 22, 23</span>
                   <div class="seat-labels"><span>A</span><span>B</span><span>C</span><span></span><span>D</span><span>E</span><span>F</span></div>
                   <div class="seat-row"><span class="seat">A</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">22</span><span class="seat">D</span><span class="seat">E</span><span class="seat">F</span></div>
-                  <div class="seat-row"><span class="seat unused">×</span><span class="seat unused">×</span><span class="seat">C</span><span class="row-num">23</span><span class="seat">D</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
+                  <div class="seat-row"><span class="seat unused">×</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">23</span><span class="seat unused">×</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
                 </div>
 
                 <div class="seat-card">
                   <h3>SAN → GEG</h3>
-                  <span class="rows">Rows 24, 25</span>
+                  <span class="rows">Rows 17, 18</span>
                   <div class="seat-labels"><span>A</span><span>B</span><span>C</span><span></span><span>D</span><span>E</span><span>F</span></div>
-                  <div class="seat-row"><span class="seat">A</span><span class="seat">B</span><span class="seat">C</span><span class="row-num">24</span><span class="seat">D</span><span class="seat">E</span><span class="seat">F</span></div>
-                  <div class="seat-row"><span class="seat unused">×</span><span class="seat unused">×</span><span class="seat">C</span><span class="row-num">25</span><span class="seat">D</span><span class="seat unused">×</span><span class="seat unused">×</span></div>
+                  <div class="seat-row"><span class="seat unused">×</span><span class="seat unused">×</span><span class="seat">C</span><span class="row-num">17</span><span class="seat">D</span><span class="seat">E</span><span class="seat">F</span></div>
+                  <div class="seat-row"><span class="seat unused">×</span><span class="seat unused">×</span><span class="seat">C</span><span class="row-num">18</span><span class="seat">D</span><span class="seat">E</span><span class="seat">F</span></div>
                 </div>
               </div>
               <div class="seat-note">Seat maps not to scale. Arrangement varies by aircraft. Aisle is between C and D.</div>
+              <div class="note"><strong>Seat assignment reminder:</strong> Check Southwest seat assignments periodically after the schedule change. Preferred layout is two consecutive rows with four seats each (4+4) so nobody has a middle seat next to a stranger.</div>
             </details>
           </div>
         </div>
@@ -1296,28 +1401,52 @@
 
 
 
-      <section>
+      <section id="itinerary">
           <h2>Week-at-a-Glance Itinerary</h2>
+          <p class="park-combination"><strong>Best current combination:</strong> Two Disney days and one Universal day — Animal Kingdom, Hollywood Studios, and Epic Universe — best match the group's stated interests. Tuesday remains intentionally flexible for rest, family time, and an optional Winter Haven outing.</p>
           <table class="week-table">
             <tbody>
               <tr><td class="day-icon">✈️</td><td class="day-date">Mon<br>Oct 5</td><td><strong>Travel Day</strong> — The Travelers fly Southwest to Orlando, arriving at 5:55 PM, then pick up the SUVs and get settled near Kissimmee.</td></tr>
-              <tr><td class="day-icon">🏡</td><td class="day-date">Arrival</td><td><strong>Settle in near C<sup>2</sup></strong> — Unpack, meet up with Cathy and Charlie, swim, visit, and start the week without everyone living out of suitcases.</td></tr>
-              <tr><td class="day-icon">🏰</td><td class="day-date">Weekdays</td><td><strong>Two Disney World park days</strong> — Two weekday Disney park days are planned for the full Orlando group, including C<sup>2</sup>.</td></tr>
-              <tr><td class="day-icon">🎢</td><td class="day-date">Park Day</td><td><strong>Universal Studios</strong> — One-day outing in the working plan. Decision: one park or park-to-park.</td></tr>
-              <tr><td class="day-icon">🐊</td><td class="day-date">Florida</td><td><strong>Recommended airboat ride</strong> — Kissimmee-area airboat ride with open water, wildlife, birds, and possible alligator sightings.</td></tr>
-              <tr><td class="day-icon">⚔️</td><td class="day-date">Evening</td><td><strong>Medieval Times dinner show</strong> — Family dinner show with knights, horses, jousting, cheering sections, and a full meal.</td></tr>
-              <tr><td class="day-icon">☀️</td><td class="day-date">Downtime</td><td><strong>Pool, breakfasts, meals, and time with C<sup>2</sup></strong> — House breakfasts, casual meals, park lunches, and family time.</td></tr>
-              <tr><td class="day-icon">🧳</td><td class="day-date">Mon<br>Oct 12</td><td><strong>Return</strong> — The Travelers return home, arriving back in Spokane at 2:05 PM. Art and Angie can later adjust their return flight for the extra Florida week.</td></tr>
+              <tr><td class="day-icon">☀️</td><td class="day-date">Tue<br>Oct 6</td><td><strong>Relax &amp; Recharge</strong> — Pool and house time, visit with Cathy and Charlie, or choose an optional scenic drive to Winter Haven or a nature walk. The day stays deliberately flexible rather than becoming another scheduled excursion.</td></tr>
+              <tr><td class="day-icon">🌌</td><td class="day-date">Wed<br>Oct 7</td><td><strong><a href="https://www.universalorlando.com/web/en/us/theme-parks/epic-universe" target="_blank" rel="noopener noreferrer">Universal Epic Universe</a></strong> — Nintendo, How to Train Your Dragon, Harry Potter, and large themed lands built for exploring. Likely the busiest day, but it directly matches Elanor's strongest interests.</td></tr>
+              <tr><td class="day-icon">⭐</td><td class="day-date">Thu<br>Oct 8</td><td><strong><a href="https://disneyworld.disney.go.com/destinations/hollywood-studios/" target="_blank" rel="noopener noreferrer">Disney's Hollywood Studios</a></strong> — Star Wars, Toy Story, shows, and movie-themed attractions with several non-coaster options. Best match for Lisa's household; Galaxy's Edge is the main reason to include it.</td></tr>
+              <tr><td class="day-icon">🦁</td><td class="day-date">Fri<br>Oct 9</td><td><strong><a href="https://disneyworld.disney.go.com/destinations/animal-kingdom/" target="_blank" rel="noopener noreferrer">Disney's Animal Kingdom</a></strong> — Animals, safari, Pandora, trails, and shows with the easiest pace for the whole group. Strongest all-around choice even if nobody wants to chase rides all day.</td></tr>
+              <tr><td class="day-icon">🐊</td><td class="day-date">Sat<br>Oct 10</td><td rowspan="2"><strong>Other Activities</strong> — Flexible weekend options include the recommended Kissimmee-area airboat ride, Medieval Times dinner show, pool and house time, casual meals, and time with C<sup>2</sup>. Final activities and timing remain open so the group can adjust after three park days.</td></tr>
+              <tr><td class="day-icon">⚔️</td><td class="day-date">Sun<br>Oct 11</td></tr>
+              <tr><td class="day-icon">✈️</td><td class="day-date">Mon<br>Oct 12</td><td><strong>Return</strong> — The Travelers return home, arriving back in Spokane at 2:05 PM. Art and Angie continue into their extra Florida week.</td></tr>
             </tbody>
           </table>
 
+          <details class="other-parks">
+            <summary>Other Parks Considered</summary>
+            <div class="park-list">
+              <article class="park-card universal">
+                <a class="park-name" href="https://www.universalorlando.com/web/en/us/theme-parks/islands-of-adventure" target="_blank" rel="noopener noreferrer">🌍 Universal Islands of Adventure</a>
+                <div class="park-description">Jurassic Park, Hogsmeade, Marvel, and Seuss; a strong ride-heavy alternative.</div>
+              </article>
+
+              <article class="park-card disney">
+                <a class="park-name" href="https://disneyworld.disney.go.com/destinations/magic-kingdom/" target="_blank" rel="noopener noreferrer">🏰 Magic Kingdom</a>
+                <div class="park-description">Classic Disney atmosphere, familiar attractions, parade, castle, and fireworks.</div>
+              </article>
+
+              <article class="park-card universal">
+                <a class="park-name" href="https://www.universalorlando.com/web/en/us/theme-parks/universal-studios-florida" target="_blank" rel="noopener noreferrer">🎬 Universal Studios Florida</a>
+                <div class="park-description">Diagon Alley, Minions, DreamWorks, and movie-based indoor attractions.</div>
+              </article>
+
+              <article class="park-card disney">
+                <a class="park-name" href="https://disneyworld.disney.go.com/destinations/epcot/" target="_blank" rel="noopener noreferrer">🌐 EPCOT</a>
+                <div class="park-description">World Showcase, food, festivals, aquarium, and a slower adult-oriented touring style.</div>
+              </article>
+            </div>
+          </details>
         </section>
 
       <section>
         <h2>Open Decisions</h2>
         <ul class="compact-list">
           <li><strong>Vehicle rentals:</strong> enter all three reservations into AutoSlash, watch for price drops, and rebook if a better fully cancellable rate appears.</li>
-          <li><strong>Universal:</strong> one park or park-to-park.</li>
           <li><strong>Airboat ride:</strong> operator, ride length, and best day to fit it in.</li>
           <li><strong>Medieval Times:</strong> best evening for the dinner show.</li>
         </ul>
@@ -1383,7 +1512,7 @@
     </main>
 
     <footer>
-      Last Updated: July 10, 2026</footer>
+      Last Updated: August 2, 2026</footer>
   </div>
 </body>
 </html>
