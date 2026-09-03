@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Public family-trip version updated 2026-08-30. -->
+<!-- Public family trip page updated 2026-09-03. Prior Costco confirmation C495101877 retained in visible vehicle note for arrival reference. Extra-week planning removed from current trip plan. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -22,7 +22,7 @@ h1{margin:0;font-size:clamp(2rem,5vw,3.6rem);line-height:.98;color:#15395b}
 .quick-strip span{border-left:3px solid var(--orange);padding-left:8px}
 .trip-update{margin:16px 0 0;padding:13px 16px;background:#7f1d1d;color:#fff7ed;border-radius:14px;font-family:"Segoe UI",Arial,sans-serif}
 .trip-update-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline}.trip-update-date{font-size:.82rem;font-weight:700}
-.update-list{margin:4px 0 0;padding-left:20px;font-size:.96rem;font-weight:700}.trip-update a{color:#fff7ed}
+.update-list{margin:4px 0 0;padding-left:20px;font-size:.96rem;font-weight:400}.trip-update a{color:#fff7ed}
 main{background:rgba(255,253,248,.9);border:1px solid rgba(216,199,163,.8);padding:22px 26px;border-radius:18px;box-shadow:0 18px 45px rgba(80,60,30,.10)}
 section{margin:0 0 20px}h2{margin:0 0 7px;color:var(--blue);font-size:1.35rem;border-bottom:1px solid var(--line);padding-bottom:4px}
 h3{margin:0 0 4px;font:700 1rem/1.2 "Segoe UI",Arial,sans-serif;color:#1f2937}p{margin:0 0 9px}
@@ -31,7 +31,7 @@ h3{margin:0 0 4px;font:700 1rem/1.2 "Segoe UI",Arial,sans-serif;color:#1f2937}p{
 .traveler-list,.compact-list{margin:4px 0 0;padding-left:18px}.status-list{list-style:none;padding-left:0}.status-list .done{color:#94a3b8;font-weight:700;opacity:.58}
 .food-plan-card{background:#fffaea;border:1px solid #d7c49b;border-radius:12px;padding:12px 14px;margin-top:36px}
 .card{border:1px solid #d9bf83;border-left:6px solid var(--orange);border-radius:12px;background:linear-gradient(180deg,rgba(255,253,248,.98),rgba(255,247,223,.72));overflow:hidden}
-.card-inner{padding:10px 12px}.section-title-line{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin:0 0 7px;padding-bottom:4px;border-bottom:1px solid var(--line)}
+.card-inner{padding:10px 12px}.adventure-card{margin:12px 6px 0 18px;border-left-width:4px}.section-title-line{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin:0 0 7px;padding-bottom:4px;border-bottom:1px solid var(--line)}
 .section-title-line h2{border:0;margin:0;padding:0}.accommodation-showcase{display:grid;grid-template-columns:minmax(250px,.82fr) minmax(220px,.7fr) minmax(300px,1fr);gap:16px}
 .accommodation-features{font:.91rem/1.18 "Segoe UI",Arial,sans-serif}.accommodation-features span{display:block;padding:5px 0;border-bottom:1px solid rgba(215,196,155,.78)}
 .accommodation-photos{display:grid;grid-template-rows:repeat(2,minmax(160px,1fr));gap:10px}.accommodation-photo{min-height:160px;border-radius:12px;border:1px solid #d7c49b;background-size:cover;background-position:center}
@@ -44,12 +44,12 @@ details.flight-details{margin-top:7px;border-radius:8px;overflow:hidden}details.
 .seat-cards{display:flex;flex-wrap:wrap;border:1px solid var(--soft);border-top:0}.seat-card{flex:1 1 240px;padding:10px 8px 12px;border-right:1px solid var(--soft);text-align:center}
 .seat-row,.seat-labels{display:grid;grid-template-columns:repeat(3,26px) 24px repeat(3,26px);justify-content:center;gap:6px;margin:4px 0}.seat{width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #355c99;border-radius:4px;background:#5879b7;color:#fff;font:900 .8rem Arial}.unused{background:#e0ded8;color:#77736d;border-color:#b9b4aa}
 .row-num{text-align:center;font-weight:900}.seat-note{margin:10px 5px 0;color:#475569;font:.78rem Arial}
-.week-table{border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:.84rem}.week-table td{border:0;border-bottom:1px solid var(--line);padding:7px 8px}.week-table tr:last-child td{border-bottom:0}.day-icon{width:40px;text-align:center;font-size:1.35rem}.day-date{width:64px;color:var(--green);text-align:center;font-weight:900;text-transform:uppercase}
+.week-table{border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:.84rem}.week-table td{border:0;border-bottom:1px solid var(--line);padding:5px 7px;vertical-align:middle}.week-table tr:last-child td{border-bottom:0}.day-icon{width:40px;text-align:center;font-size:1.35rem}.day-date{width:64px;color:var(--green);text-align:center;text-transform:uppercase;white-space:nowrap;line-height:1.05}.day-date .dow{display:block;font-weight:900}.day-date .date{display:block;margin-top:3px;font-size:.72rem;font-weight:400;white-space:nowrap}
 .option-table td:first-child{width:42px;text-align:center;font-size:1.3rem}.option-table strong a{color:#15395b}
 .other-parks{margin-top:10px;border:1px solid var(--line);border-radius:10px;background:#fffaf0;overflow:hidden;font-family:"Segoe UI",Arial,sans-serif}.other-parks summary{cursor:pointer;padding:9px 11px;color:#15395b;font-weight:900;background:#f7ead1}.park-list{display:grid;gap:8px;padding:8px}.park-card{display:grid;grid-template-columns:minmax(210px,1fr) minmax(260px,2fr);gap:6px 12px;padding:9px 11px;border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:10px;background:#eef6ff;font:.88rem/1.24 "Segoe UI",Arial,sans-serif}.park-card.universal{border-left-color:#68429a;background:#f5f0fb}.park-name{color:#15395b;text-decoration:none}
 .money{padding:10px 12px;border:1px solid #9acc84;border-radius:12px;background:#f4fae8;font-family:Arial,sans-serif}.money h2{color:#14532d;border-bottom-color:#abc98f}.money th,.money td{border-color:#abc98f}.money th{background:#eef8dc;color:#14532d}.money .total td{background:#dff1cf;font-weight:900}.remove{color:#b91c1c;font-weight:900}.assumptions-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:.78rem}
 footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe UI",Arial,sans-serif}
-@media(max-width:760px){.two-col,.planning-food-grid,.accommodation-showcase{grid-template-columns:1fr}.food-plan-card{margin-top:0}.page{padding:16px}main{padding:18px}.park-card{grid-template-columns:1fr}}
+@media(max-width:760px){.two-col,.planning-food-grid,.accommodation-showcase{grid-template-columns:1fr}.food-plan-card{margin-top:0}.page{padding:16px}main{padding:18px}.park-card{grid-template-columns:1fr}.adventure-card{margin-left:8px;margin-right:0}}
 </style>
 </head>
 <body>
@@ -60,8 +60,8 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 <p class="subtitle">A family week in Orlando where everyone gets together with Cathy and Charlie, celebrates Grand/Dad’s retirement this fall, and adds Disney World, Universal, and a few classic Orlando-area adventures around the edges.</p>
 <div class="quick-strip"><span>Departure: October 5, 2026</span><span>Main trip: October 5–12, 2026</span><span>Home base: Orlando / Kissimmee</span><span>8 Travelers • 2 Local Experts</span></div>
 <div class="trip-update">
-<div class="trip-update-head"><strong>Latest Updates</strong><span class="trip-update-date">August 30, 2026</span></div>
-<ul class="update-list"><li><a href="#itinerary">Flexible week plan</a>: only the travel days and Tuesday Relax &amp; Recharge are scheduled. Parks and other activities remain open so the group can choose what feels right during the week.</li></ul>
+<div class="trip-update-head"><strong>Latest Updates</strong><span class="trip-update-date">September 3, 2026</span></div>
+<ul class="update-list"><li><strong><a href="#itinerary">Flexible week plan</a>:</strong> only the travel days and Tuesday Relax &amp; Recharge are scheduled. Parks and other activities remain open so the group can choose what feels right during the week.</li></ul>
 <div class="update-subline">Current priority: keep the week flexible and low-stress.</div>
 </div>
 </header>
@@ -73,14 +73,14 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 </section>
 
 <section class="planning-food-grid">
-<div><h2>Planning Status</h2><ul class="compact-list status-list"><li class="done">✅ ✈️ <strong>Flights Booked</strong> — Southwest Choice</li><li class="done">✅ 🏠 <strong>Rental House Reserved</strong> — Disney Paradise Villa.</li><li class="done">✅ 🚙 <strong>Vehicle Selection</strong> — Reserved through Costco/Budget.</li><li class="done">✅ 💺 <strong>Seat Assignments</strong> — Updated after the flight routing changes.</li><li>🎟️ <strong>Disney Tickets</strong> — Pending.</li><li>🎢 <strong>Universal Epic Universe</strong> — Tickets pending.</li><li>🐊 <strong>Airboat Adventure</strong> — Pending.</li><li>🏰 <strong>Medieval Times dinner show</strong> — Pending.</li></ul></div>
+<div><h2>Planning Status</h2><ul class="compact-list status-list"><li class="done">✅ ✈️ <strong>Flights Booked</strong> — Southwest Choice</li><li class="done">✅ 🏠 <strong>Rental House Paid in Full</strong> — Titan confirmation received; amount due $0.</li><li class="done">✅ 🚙 <strong>Vehicle Selection</strong> — Reserved through Costco/Budget.</li><li class="done">✅ 💺 <strong>Seat Assignments</strong> — Updated after the flight routing changes.</li><li>🎟️ <strong>Disney Tickets</strong> — Pending.</li><li>🎢 <strong>Universal Epic Universe</strong> — Tickets pending.</li><li>🐊 <strong>Airboat Adventure</strong> — Pending.</li><li>🏰 <strong>Medieval Times Dinner &amp; Tournament</strong> — Pending.</li></ul></div>
 <div class="food-plan-card"><h2>Food Plan</h2><p>Breakfasts will mostly be simple rented-house food. Park lunches happen on park days, with casual restaurants, meals at the house, and some dinners or evenings with C<sup>2</sup> filling in the rest of the week.</p></div>
 </section>
 
 <section id="accommodations">
 <div class="section-title-line"><h2><a href="https://www.vrbo.com/9821898ha">Disney Paradise Villa w/ South Private Pool</a></h2><a href="https://www.vrbo.com/9821898ha">Click for details</a></div>
 <div class="card"><div class="card-inner"><div class="accommodation-showcase">
-<div><p>Our home base for the trip — space to relax, play, swim, and make the week feel easy between Orlando adventures.</p><div class="accommodation-features"><span>📍 Cumbrian Lakes, Kissimmee</span><span>🏊 Enclosed pool</span><span>🌅 Lake + conservation view</span><span>🚗 12–18 min to Cathy &amp; Charlie</span><span>🛏️ 5 bedrooms</span><span>🚿 3.5 bathrooms</span><span>🪄 Harry Potter twin room</span><span>🍳 Full kitchen</span><span>🍽️ Dining for 8</span><span>🧺 Washer/dryer</span><span>🎱 Game room: pool + foosball</span><span>🎮 Loft gaming: PS4 + Wii</span></div></div>
+<div><p>Our home base for the trip — space to relax, play, swim, and make the week feel easy between Orlando adventures.</p><p><strong>Status:</strong> Paid in full. Titan will send arrival details about 14 days before the October 5 check-in.</p><div class="accommodation-features"><span>📍 Cumbrian Lakes, Kissimmee</span><span>🏊 Enclosed pool</span><span>🌅 Lake + conservation view</span><span>🚗 12–18 min to Cathy &amp; Charlie</span><span>🛏️ 5 bedrooms</span><span>🚿 3.5 bathrooms</span><span>🪄 Harry Potter twin room</span><span>🍳 Full kitchen</span><span>🍽️ Dining for 8</span><span>🧺 Washer/dryer</span><span>🎱 Game room: pool + foosball</span><span>🎮 Loft gaming: PS4 + Wii</span></div></div>
 <div class="accommodation-photos"><div class="accommodation-photo pool"></div><div class="accommodation-photo second"></div></div>
 <iframe class="accommodation-map" title="Map showing route from Cumbrian Lakes to Bella Lago in Kissimmee" loading="lazy" src="https://www.google.com/maps?output=embed&q=Cumbrian%20Lakes%20Kissimmee%20FL%20to%20Bellalago%20Kissimmee%20FL&z=11"></iframe>
 </div></div></div>
@@ -104,11 +104,10 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 
 <section id="vehicle-rental">
 <div class="section-title-line"><h2>Vehicles</h2><strong>Budget</strong></div>
-<div class="card"><div class="card-inner"><p>Three vehicles are currently reserved: two for the main family week and one for Art &amp; Angie’s extra week. The family-week mix gives us one mid-size SUV and one full-size SUV, which should cover people, luggage, grocery runs, park days, and the inevitable “who needs to leave early?” split without forcing everyone into one vehicle.</p><p>Reservations are through Costco Travel / Budget. Enter all three into AutoSlash for price tracking, then rebook only if a better fully cancellable rate shows up.</p>
+<div class="card"><div class="card-inner"><p>Two SUVs are reserved for the family week: one mid-size SUV and one full-size SUV. Together they should cover people, luggage, grocery runs, park days, and the inevitable “who needs to leave early?” split without forcing everyone into one vehicle.</p><p>Reservations are through Costco Travel / Budget. For the Standard Elite SUV, Costco currently shows confirmation <strong>C495101872</strong>. Keep the previous Costco confirmation <strong>C495101877</strong> handy as a reference in case there is a question at pickup.</p>
 <h3>Reserved Vehicles</h3><table><thead><tr><th>Vehicle</th><th>Dates</th><th>Category</th><th>Costco Conf #</th><th>Budget Conf #</th></tr></thead><tbody>
 <tr><td>Mid-size SUV</td><td>10/05/26, 5:00 PM → 10/12/26, 12:00 PM</td><td>Intermediate SUV — Mazda CX-50 or similar</td><td><strong>C495101876</strong></td><td><strong>49155282US1</strong></td></tr>
-<tr><td>Full-size SUV</td><td>10/05/26, 5:00 PM → 10/12/26, 12:00 PM</td><td>Standard Elite SUV — Ford Explorer or similar</td><td><strong>C495101877</strong></td><td><strong>49155378US9</strong></td></tr>
-<tr><td>Sporty Car</td><td>10/12/26, 8:00 AM → 10/19/26, 12:00 PM</td><td>Standard Sporty Car — Ford Mustang Coupe or similar</td><td><strong>C495106863</strong></td><td><strong>49157963US1</strong></td></tr>
+<tr><td>Full-size SUV</td><td>10/05/26, 5:00 PM → 10/12/26, 12:00 PM</td><td>Standard Elite SUV — Ford Explorer or similar</td><td><strong>C495101872</strong><br><small>Previous: C495101877</small></td><td><strong>49155378US9</strong></td></tr>
 </tbody></table></div></div>
 </section>
 
@@ -117,21 +116,24 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 <p><strong>Flexible by design:</strong> only the travel days and Tuesday Relax &amp; Recharge are scheduled. Parks and other activities stay unscheduled so the group can decide what to do based on energy, weather, crowds, and what sounds fun that day.</p>
 
 <table class="week-table"><tbody>
-<tr><td class="day-icon">✈️</td><td class="day-date">Mon<br>Oct 5</td><td><strong>Travel Day</strong> — The Travelers fly Southwest to Orlando, arriving at 5:55 PM, then pick up the SUVs and get settled near Kissimmee.</td></tr>
-<tr><td class="day-icon">☀️</td><td class="day-date">Tue<br>Oct 6</td><td><strong>Relax &amp; Recharge</strong> — Pool and house time and visit with Cathy and Charlie. The day stays deliberately easy and unscheduled beyond rest and family time.</td></tr>
-<tr><td class="day-icon">✈️</td><td class="day-date">Mon<br>Oct 12</td><td><strong>Return</strong> — The Travelers return home, arriving back in Spokane at 2:05 PM. Art and Angie continue into their extra Florida week.</td></tr>
+<tr><td class="day-icon">✈️</td><td class="day-date"><span class="dow">Mon</span><span class="date">Oct 5</span></td><td><strong>Travel Day</strong> — Fly Southwest to Orlando, arrive at 5:55 PM, pick up the SUVs, and settle in.</td></tr>
+<tr><td class="day-icon">☀️</td><td class="day-date"><span class="dow">Tue</span><span class="date">Oct 6</span></td><td><strong>Relax &amp; Recharge</strong> — Pool, house, and family time with Cathy &amp; Charlie. Keep it easy.</td></tr>
+<tr><td class="day-icon">✨</td><td class="day-date"><span class="dow">Wed</span><span class="date">Oct 7</span></td><td><span style="font-size:.92em;color:#667085;font-style:italic">Choose your adventure…</span></td></tr>
+<tr><td class="day-icon">✨</td><td class="day-date"><span class="dow">Thu</span><span class="date">Oct 8</span></td><td><span style="font-size:.92em;color:#667085;font-style:italic">Choose your adventure…</span></td></tr>
+<tr><td class="day-icon">✨</td><td class="day-date"><span class="dow">Fri</span><span class="date">Oct 9</span></td><td><span style="font-size:.92em;color:#667085;font-style:italic">Choose your adventure…</span></td></tr>
+<tr><td class="day-icon">✨</td><td class="day-date"><span class="dow">Sat</span><span class="date">Oct 10</span></td><td><span style="font-size:.92em;color:#667085;font-style:italic">Choose your adventure…</span></td></tr>
+<tr><td class="day-icon">✨</td><td class="day-date"><span class="dow">Sun</span><span class="date">Oct 11</span></td><td><span style="font-size:.92em;color:#667085;font-style:italic">Choose your adventure…</span></td></tr>
+<tr><td class="day-icon">✈️</td><td class="day-date"><span class="dow">Mon</span><span class="date">Oct 12</span></td><td><strong>Return</strong> — Fly home together, arriving back in Spokane at 2:05 PM.</td></tr>
 </tbody></table>
-
-<h3 style="margin-top:14px">Other Activities</h3>
-<p>These are possibilities for the open days. No dates are assigned; the idea is to choose from them during the week rather than lock the family into a schedule.</p>
-<table class="option-table"><tbody>
+<div id="other-activities" class="card adventure-card"><div class="card-inner" style="padding:9px 12px"><p style="margin:0 0 8px"><strong>Choose Your Adventure:</strong> Wednesday through Sunday are intentionally flexible. Choose from the adventures below, spend time at the house or pool, visit with family, or simply take it easy. Nothing is assigned to a specific day—we’ll decide as we go based on energy, weather, crowds, and what sounds fun.</p>
+<table class="option-table" style="margin:0"><tbody>
 <tr><td>🌌</td><td><strong><a href="https://www.universalorlando.com/web/en/us/theme-parks/epic-universe">Universal Epic Universe</a></strong> — Nintendo, How to Train Your Dragon, Harry Potter, and large themed lands built for exploring. Likely the busiest park option, but it directly matches Elanor's strongest interests.</td></tr>
 <tr><td>🦁</td><td><strong><a href="https://disneyworld.disney.go.com/destinations/animal-kingdom/">Disney's Animal Kingdom</a></strong> — Animals, safari, Pandora, trails, and shows with the easiest pace for the whole group. Strongest all-around choice even if nobody wants to chase rides all day.</td></tr>
-<tr><td>🐊</td><td><strong>Airboat Adventure</strong> — Recommended Kissimmee-area airboat ride; operator and ride length can be chosen later.</td></tr>
-<tr><td>⚔️</td><td><strong>Medieval Times dinner show</strong> — A possible evening activity in Kissimmee.</td></tr>
+<tr><td>🐊</td><td><strong>Airboat Adventure</strong> — Explore the headwaters of the Florida Everglades by airboat, with opportunities to see alligators, birds, and other Central Florida wildlife. Options: <a href="https://bcairboats.com/">Boggy Creek Airboat Adventures</a> in Kissimmee or <a href="https://www.wildfloridairboats.com/airboat-tours">Wild Florida Airboat Tours</a>, where airboat tickets also include Alligator Park admission.</td></tr>
+<tr><td>⚔️</td><td><strong><a href="https://www.medievaltimes.com/orlando">Medieval Times Dinner &amp; Tournament</a></strong> — A possible evening activity at the Orlando Castle in Kissimmee.</td></tr>
 <tr><td>🚗</td><td><strong>Scenic drive / nature walk</strong> — Choose an optional scenic drive to Winter Haven or a nature walk.</td></tr>
 <tr><td>🏊</td><td><strong>Pool, house &amp; family time</strong> — Keep an open day at the villa, have casual meals, and spend time with C<sup>2</sup>.</td></tr>
-</tbody></table>
+</tbody></table></div></div>
 
 <details class="other-parks"><summary>Other Parks Considered</summary><div class="park-list">
 <article class="park-card"><a class="park-name" href="https://disneyworld.disney.go.com/destinations/hollywood-studios/">⭐ Disney's Hollywood Studios</a><div>Star Wars, Toy Story, shows, and movie-themed attractions with several non-coaster options. Best match for Lisa's household; Galaxy's Edge is the main reason to include it.</div></article>
@@ -142,9 +144,9 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 </div></details>
 </section>
 
-<section><h2>Open Decisions</h2><ul class="compact-list"><li><strong>Vehicle rentals:</strong> enter all three reservations into AutoSlash, watch for price drops, and rebook if a better fully cancellable rate appears.</li><li><strong>Airboat ride:</strong> operator and ride length.</li><li><strong>Medieval Times:</strong> whether to do the dinner show during the trip.</li></ul></section>
+
 </main>
-<footer>Last Updated: August 30, 2026</footer>
+<footer>Updated September 3, 2026</footer>
 </div>
 </body>
 </html>
