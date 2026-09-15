@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- Version: 2026.09.13.2 -->
-<!-- Public family trip page updated 2026-09-13. Prior Costco confirmation C495101877 retained in visible vehicle note for arrival reference. Extra-week planning removed from current trip plan. -->
+<!-- Version: 2026.09.15.2 -->
+<!-- Public family trip page updated 2026-09-15. Prior Costco confirmation C495101877 retained in visible vehicle note for arrival reference. Extra-week planning removed from current trip plan. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -51,6 +51,13 @@ details.flight-details{margin-top:7px;border-radius:8px;overflow:hidden}details.
 .money{padding:10px 12px;border:1px solid #9acc84;border-radius:12px;background:#f4fae8;font-family:Arial,sans-serif}.money h2{color:#14532d;border-bottom-color:#abc98f}.money th,.money td{border-color:#abc98f}.money th{background:#eef8dc;color:#14532d}.money .total td{background:#dff1cf;font-weight:900}.remove{color:#b91c1c;font-weight:900}.assumptions-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:.78rem}
 footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe UI",Arial,sans-serif}
 @media(max-width:760px){.two-col,.planning-food-grid,.accommodation-showcase{grid-template-columns:1fr}.food-plan-card{margin-top:0}.page{padding:16px}main{padding:18px}.park-card{grid-template-columns:1fr}.adventure-card{margin-left:8px;margin-right:0}}
+
+.airboat-options{margin-top:18px}
+.airboat-option-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.airboat-option-grid h3{margin:0 0 6px;font-size:1rem}
+.airboat-option-grid p{margin:0}
+@media(max-width:800px){.airboat-option-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -61,12 +68,11 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 <p class="subtitle">A family week in Orlando where everyone gets together with Cathy and Charlie, celebrates Grand/Dad’s retirement this fall, and adds Disney World, Universal, and a few classic Orlando-area adventures around the edges.</p>
 <div class="quick-strip"><span>Airport hotel: October 4, 2026</span><span>Flights: October 5–12, 2026</span><span>Home base: Orlando / Kissimmee</span><span>8 Travelers • 2 Local Experts</span></div>
 <div class="trip-update">
-<div class="trip-update-head"><strong>Latest Updates</strong><span class="trip-update-date">September 13, 2026</span></div>
+<div class="trip-update-head"><strong>Latest Updates</strong><span class="trip-update-date">September 15, 2026</span></div>
 <ul class="update-list">
-<li><strong>Park tickets confirmed:</strong> <a href="https://www.universalorlando.com/web/en/us/theme-parks/epic-universe">Universal Epic Universe</a> is fixed for Wednesday, October 7, and <a href="https://disneyworld.disney.go.com/destinations/animal-kingdom/">Disney's Animal Kingdom</a> is fixed for Friday, October 9. Tickets are purchased for all 8 travelers.</li>
-<li><strong>Evening plans set:</strong> <a href="https://www.medievaltimes.com/orlando">Medieval Times Dinner &amp; Tournament</a> is planned for Tuesday, October 6 at 6:00 PM, and <a href="https://www.cirquedusoleil.com/drawn-to-life">Drawn to Life</a> at Disney Springs is booked for Thursday, October 8 at 5:30 PM.</li>
+<li><strong>Cat cafe reserved:</strong> <a href="https://mcmanor.com/">Maine Coon Manor Cat Cafe</a> is reserved for Tuesday, October 6 at <strong>1:00 PM</strong> for 9 people — everyone except Angie.</li>
 </ul>
-<div class="update-subline">The major park days are now fixed; the remaining open time stays intentionally flexible.</div>
+<div class="update-subline">Next planning item: choose the airboat tour and which day to do it.</div>
 </div>
 </header>
 
@@ -80,16 +86,35 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 <div><h2>Planning Status</h2><ul class="compact-list status-list">
 <li class="done">✅ 🏨 <strong>Airport Hotel Booked</strong> — Two rooms at Ramada by Wyndham Spokane Airport for October 4.</li>
 <li class="done">✅ ✈️ <strong>Flights Booked</strong> — Southwest Choice</li>
-<li class="done">✅ 🏠 <strong>Rental House Paid in Full</strong> — Titan confirmation received; amount due $0.</li>
+<li class="done">✅ 🏠 <strong>Rental House Paid in Full</strong> — Titan confirmation received; paid in full.</li>
 <li class="done">✅ 🚙 <strong>Vehicle Selection</strong> — Reserved through Costco/Budget.</li>
 <li class="done">✅ 💺 <strong>Seat Assignments</strong> — Updated after the flight routing changes.</li>
 <li class="done">✅ 🎢 <strong><a href="https://www.universalorlando.com/web/en/us/theme-parks/epic-universe">Universal Epic Universe</a></strong> — 8 tickets purchased for Wednesday, Oct. 7. Confirmation <strong>UA00001W6ZN</strong>.</li>
 <li class="done">✅ 🦁 <strong><a href="https://disneyworld.disney.go.com/destinations/animal-kingdom/">Disney's Animal Kingdom</a></strong> — 8 tickets purchased for Friday, Oct. 9. Confirmation <strong>EQKT94252525</strong>.</li>
-<li class="done">✅ 🎪 <strong><a href="https://www.cirquedusoleil.com/drawn-to-life">Drawn to Life</a></strong> — Booked for Thursday, Oct. 8 at 5:30 PM for 10 people. Total: <strong>$895.30</strong>.</li>
+<li class="done">✅ 🎪 <strong><a href="https://www.cirquedusoleil.com/drawn-to-life">Drawn to Life</a></strong> — Booked for Thursday, Oct. 8 at 5:30 PM for 10 people..</li>
+<li class="done">✅ 🐱 <strong><a href="https://mcmanor.com/">Maine Coon Manor Cat Cafe</a></strong> — Reserved for Tuesday, Oct. 6 at 1:00 PM for 9 people (everyone except Angie).</li>
 <li>⚔️ <strong><a href="https://www.medievaltimes.com/orlando">Medieval Times Dinner &amp; Tournament</a></strong> — Tuesday, Oct. 6 at 6:00 PM; Cathy &amp; Charlie are covering the tickets.</li>
-<li>🐊 <strong>Airboat Adventure</strong> — Pending.</li>
+<li>🐊 <strong>Airboat Adventure</strong> — To do: select the tour and day.</li>
 </ul></div>
 <div class="food-plan-card"><h2>Food Plan</h2><p>Breakfasts will mostly be simple rented-house food. Park lunches happen on park days, with casual restaurants, meals at the house, and some dinners or evenings with C<sup>2</sup> filling in the rest of the week.</p></div>
+</section>
+
+<section class="airboat-options" id="airboat-options">
+<div class="section-title-line"><h2>Airboat Options</h2><strong>To do: choose the tour and day</strong></div>
+<div class="airboat-option-grid">
+<div class="card"><div class="card-inner">
+<h3><a href="https://bcairboats.com/" target="_blank" rel="noopener">Boggy Creek Airboat Adventures</a></h3>
+<p>Kissimmee-area Everglades airboat tours with 30-minute, 1-hour, private and specialty rides. The attraction also has a Gator Oasis, butterfly/critter gardens, gem mining, and a Highland-cow experience.</p>
+</div></div>
+<div class="card"><div class="card-inner">
+<h3><a href="https://www.wildfloridairboats.com/airboat-tours" target="_blank" rel="noopener">Wild Florida Airboat Tours</a></h3>
+<p>Airboat tours through the Headwaters of the Everglades. Every airboat ticket includes admission to the <strong>Alligator Park</strong>, with animal exhibits and shows; larger adventure packages can add lunch and other experiences.</p>
+</div></div>
+<div class="card"><div class="card-inner">
+<h3><a href="https://spiritoftheswamp.com/tours/large-group-1-hour-airboat-tour/" target="_blank" rel="noopener">Spirit of the Swamp — Large Group 1-Hour Tour</a></h3>
+<p>One-hour wildlife-focused airboat tour for groups of 7+, using small boats with padded seats, shade covers and headsets so riders can talk with the captain. This is the most airboat-focused option, without a separate animal park.</p>
+</div></div>
+</div>
 </section>
 
 <section id="accommodations">
@@ -150,15 +175,15 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 <table class="week-table"><tbody>
 <tr><td class="day-icon">🏨</td><td class="day-date"><span class="dow">Sun</span><span class="date">Oct 4</span></td><td><strong>Airport Hotel</strong> — Art &amp; Angie and Rich, Lisa, William &amp; Elanor stay at the Ramada near GEG; Rachel &amp; Jesse Uber in Monday morning.</td></tr>
 <tr><td class="day-icon">✈️</td><td class="day-date"><span class="dow">Mon</span><span class="date">Oct 5</span></td><td><strong>Travel Day</strong> — Fly Southwest to Orlando, arrive at 5:55 PM, pick up the SUVs, and settle in.</td></tr>
-<tr><td class="day-icon">☀️</td><td class="day-date"><span class="dow">Tue</span><span class="date">Oct 6</span></td><td><strong>Relax &amp; Recharge</strong> — Easy day at the house and pool; <strong><a href="https://www.medievaltimes.com/orlando">Medieval Times Dinner &amp; Tournament</a></strong> at <strong>6:00 PM</strong>.</td></tr>
+<tr><td class="day-icon">☀️</td><td class="day-date"><span class="dow">Tue</span><span class="date">Oct 6</span></td><td><strong>Relax &amp; Recharge</strong> — Easy morning at the house and pool; <strong><a href="https://mcmanor.com/">Maine Coon Manor Cat Cafe</a></strong> at <strong>1:00 PM</strong> for 9 people (everyone except Angie), then <strong><a href="https://www.medievaltimes.com/orlando">Medieval Times Dinner &amp; Tournament</a></strong> at <strong>6:00 PM</strong>.</td></tr>
 <tr><td class="day-icon">🌌</td><td class="day-date"><span class="dow">Wed</span><span class="date">Oct 7</span></td><td><strong><a href="https://www.universalorlando.com/web/en/us/theme-parks/epic-universe">Universal Epic Universe</a></strong> — Confirmed park day for all 8 travelers.</td></tr>
-<tr><td class="day-icon">🎪</td><td class="day-date"><span class="dow">Thu</span><span class="date">Oct 8</span></td><td><strong>Open daytime</strong> — Then <strong><a href="https://www.cirquedusoleil.com/drawn-to-life">Drawn to Life</a></strong> at Disney Springs at <strong>5:30 PM</strong>. Tickets booked for 10; total <strong>$895.30</strong>.</td></tr>
+<tr><td class="day-icon">🎪</td><td class="day-date"><span class="dow">Thu</span><span class="date">Oct 8</span></td><td><strong>Open daytime</strong> — Then <strong><a href="https://www.cirquedusoleil.com/drawn-to-life">Drawn to Life</a></strong> at Disney Springs at <strong>5:30 PM</strong>. Tickets booked for 10.</td></tr>
 <tr><td class="day-icon">🦁</td><td class="day-date"><span class="dow">Fri</span><span class="date">Oct 9</span></td><td><strong><a href="https://disneyworld.disney.go.com/destinations/animal-kingdom/">Disney&#39;s Animal Kingdom</a></strong> — Confirmed park day for all 8 travelers.</td></tr>
 <tr><td class="day-icon">✨</td><td class="day-date"><span class="dow">Sat</span><span class="date">Oct 10</span></td><td><span style="font-size:.92em;color:#667085;font-style:italic">Choose your adventure…</span></td></tr>
 <tr><td class="day-icon">✨</td><td class="day-date"><span class="dow">Sun</span><span class="date">Oct 11</span></td><td><span style="font-size:.92em;color:#667085;font-style:italic">Choose your adventure…</span></td></tr>
 <tr><td class="day-icon">✈️</td><td class="day-date"><span class="dow">Mon</span><span class="date">Oct 12</span></td><td><strong>Return</strong> — Fly home together, arriving back in Spokane at 2:05 PM.</td></tr>
 </tbody></table>
-<div id="other-activities" class="card adventure-card"><div class="card-inner" style="padding:9px 12px"><p style="margin:0 0 8px"><strong>Choose Your Adventure:</strong> Saturday and Sunday remain fully open, with additional free time Tuesday and Thursday around the evening plans. Pick from the possibilities below, spend time at the house or pool, visit with family, or simply take it easy.</p>
+<div id="other-activities" class="card adventure-card"><div class="card-inner" style="padding:9px 12px"><p style="margin:0 0 8px"><strong>Choose Your Adventure:</strong> Saturday and Sunday remain fully open, with additional free time Thursday and around Tuesday’s planned cat-cafe and evening activities. Pick from the possibilities below, spend time at the house or pool, visit with family, or simply take it easy.</p>
 <table class="option-table" style="margin:0"><tbody>
 <tr><td>🐊</td><td><strong>Airboat Adventure</strong> — Explore the headwaters of the Florida Everglades by airboat, with opportunities to see alligators, birds, and other Central Florida wildlife. Options: <a href="https://bcairboats.com/">Boggy Creek Airboat Adventures</a> in Kissimmee or <a href="https://www.wildfloridairboats.com/airboat-tours">Wild Florida Airboat Tours</a>, where airboat tickets also include Alligator Park admission.</td></tr>
 <tr><td>🚗</td><td><strong>Scenic drive / nature walk</strong> — Choose an optional scenic drive to Winter Haven or a nature walk.</td></tr>
@@ -176,7 +201,7 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 
 
 </main>
-<footer>Updated September 13, 2026 • Version 2026.09.13.2</footer>
+<footer>Updated September 15, 2026 • Version 2026.09.15.2</footer>
 </div>
 </body>
 </html>
