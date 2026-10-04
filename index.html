@@ -60,18 +60,23 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 @media(max-width:800px){.airboat-option-grid{grid-template-columns:1fr}}
 
 .boarding-download{margin:18px 0;font-family:"Segoe UI",Arial,sans-serif}.boarding-download-button{display:inline-flex;align-items:center;gap:10px;padding:13px 18px;background:var(--blue-dark);color:#fff;text-decoration:none;border-radius:10px;font-weight:700;box-shadow:0 3px 8px rgba(8,43,92,.15)}.boarding-download-button:hover{background:var(--blue)}.boarding-download-button:focus-visible{outline:3px solid var(--orange);outline-offset:3px}.boarding-download-format{font-size:.75rem;background:rgba(255,255,255,.18);padding:3px 6px;border-radius:4px}.boarding-download p{margin:7px 0 0;color:var(--muted);font-size:.88rem}@media(max-width:480px){.boarding-download-button{font-size:.88rem;padding:12px;gap:7px}}
+.trip-tools{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:36px;align-items:center;margin:14px 0 10px;font-family:"Segoe UI",Arial,sans-serif}.trip-tools .boarding-download{margin:0}.trip-tools .boarding-download-button{padding:10px 13px;font-size:.88rem;gap:7px}.trip-tools .boarding-download p{font-size:.75rem;margin-top:4px}.section-index{font-size:.78rem;line-height:1.3;display:grid;grid-template-columns:max-content max-content;align-items:start;column-gap:24px}.section-index strong{font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-right:7px}.section-index a{color:var(--blue-dark);text-decoration:none;white-space:nowrap;display:block;margin-right:0}.section-index a:hover{text-decoration:underline}.section-index a:focus-visible{outline:2px solid var(--orange);outline-offset:2px}h2[id],section[id]{scroll-margin-top:14px}@media(max-width:650px){.trip-tools{grid-template-columns:1fr;gap:6px}.section-index{font-size:.78rem;line-height:1.3}}
+.index-heading{grid-column:1/-1;margin:0 0 3px!important;font-size:.76rem!important;text-transform:none!important;letter-spacing:0!important;color:var(--blue-dark)!important}.index-column{display:flex;flex-direction:column;gap:2px;margin:0;padding-left:15px}.index-column li{padding-left:1px}.section-index a{display:inline}.section-index li::marker{color:var(--orange)}
+.trip-tools .boarding-download{justify-self:end;text-align:right}.back-to-top{display:block;width:max-content;margin:8px 0 0 auto;font:.72rem/1.2 "Segoe UI",Arial,sans-serif;color:var(--muted);text-decoration:none}.back-to-top:hover{color:var(--blue-dark);text-decoration:underline}.back-to-top:focus-visible{outline:2px solid var(--orange);outline-offset:2px}.final-checklist>.back-to-top{margin:0 14px 10px auto}@media(max-width:650px){.trip-tools .boarding-download{justify-self:start;text-align:left}}
+.two-col>.back-to-top,.planning-food-grid>.back-to-top{grid-column:1/-1}
+.heading-with-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;min-width:0}.heading-with-top h2{flex:1;min-width:0}.title-top-link{flex:none;white-space:nowrap;font:.7rem/1.2 "Segoe UI",Arial,sans-serif;color:var(--muted);text-decoration:none}.title-top-link:hover{color:var(--blue-dark);text-decoration:underline}.title-top-link:focus-visible{outline:2px solid var(--orange);outline-offset:2px}.section-title-line>.heading-with-top{flex:1 1 100%}.trip-update-head>.heading-with-top{flex:1}.final-checklist>.card-inner{padding-bottom:14px}
 </style>
 </head>
 <body>
-<div class="page">
+<div class="page" id="top">
 <header>
 <div class="eyebrow">October 2026 • Orlando / Kissimmee</div>
 <h1>Disneyworld Family Trip</h1>
 <p class="subtitle">A family week in Orlando where everyone gets together with Cathy and Charlie, celebrates Grand/Dad’s retirement this fall, and adds Disney World, Universal, and a few classic Orlando-area adventures around the edges.</p>
-<div class="boarding-download"><a class="boarding-download-button" href="Southwest_Boarding_Passes.pdf" download><span aria-hidden="true">&#9992;</span> Download Southwest Boarding Passes <span class="boarding-download-format">PDF</span></a><p>October 5 flights &bull; Save for offline access or print before leaving.</p></div>
+<div class="trip-tools"><nav class="section-index" aria-label="Trip section index"><strong class="index-heading">Jump to…</strong><ul class="index-column"><li><a href="#trip-overview">Summary</a></li><li><a href="#spokane-airport-hotel">Ramada Inn</a></li><li><a href="#flights">Flights</a></li></ul><ul class="index-column"><li><a href="#vehicle-rental">Vehicles</a></li><li><a href="#accommodations">Accommodations</a></li><li><a href="#itinerary">Itinerary</a></li></ul></nav><div class="boarding-download"><a class="boarding-download-button" href="Southwest_Boarding_Passes.pdf" download><span aria-hidden="true">&#9992;</span> Southwest Boarding Passes <span class="boarding-download-format">PDF</span></a><p>October 5 flights &bull; Save for offline access or print before leaving.</p></div></div>
 <section class="card final-checklist" aria-labelledby="final-checklist-title">
 <div class="card-inner">
-<div class="trip-update-head"><h2 id="final-checklist-title">Final Pre-Trip Checklist</h2><span class="trip-update-date">October 3, 2026</span></div>
+<div class="trip-update-head"><div class="heading-with-top"><h2 id="final-checklist-title">Final Pre-Trip Checklist</h2><a class="title-top-link" href="#top">Back to Top &#8593;</a></div><span class="trip-update-date">October 3, 2026</span></div>
 <p>Before leaving, confirm these physical and phone checks:</p>
 <ul class="compact-list">
 <li><strong>Universal:</strong> Save <strong>TicketOrderUA00001W6ZN.pdf</strong> offline on a phone and confirm all 8 admission QR codes open.</li>
@@ -97,12 +102,12 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 
 <main>
 <section class="two-col">
-<div><h2>The Trip</h2><p>This fall, Grand/Dad is retiring, and the family is getting together in Orlando for a week built first around visiting Cathy and Charlie near Kissimmee. Disney World, Universal Studios, and a few other Orlando-area attractions are part of the fun, but the center of the trip is time together as family.</p><p>The week is planned around staying together near Kissimmee, making it easy to visit with Cathy and Charlie, enjoy the parks, share meals, hang out at the rented house, and keep the schedule full without turning it into a forced march.</p></div>
-<div><h2>Travel Group</h2><div class="group-title">The Travelers</div><ul class="traveler-list"><li>Art &amp; Angie</li><li>Rachel &amp; Jesse</li><li>Lisa &amp; Rich</li><li>William</li><li>Elanor</li></ul><div class="group-title">The Local Experts</div><ul class="traveler-list"><li>Cathy &amp; Charlie Herzog<br>3889 Carrick Bend Dr, Kissimmee, FL 34746<br>📞 <a href="tel:+12088191356">(208) 819-1356</a></li></ul></div>
+<div><div class="heading-with-top"><h2 id="trip-overview">The Trip</h2><a class="title-top-link" href="#top">Back to Top &#8593;</a></div><p>This fall, Grand/Dad is retiring, and the family is getting together in Orlando for a week built first around visiting Cathy and Charlie near Kissimmee. Disney World, Universal Studios, and a few other Orlando-area attractions are part of the fun, but the center of the trip is time together as family.</p><p>The week is planned around staying together near Kissimmee, making it easy to visit with Cathy and Charlie, enjoy the parks, share meals, hang out at the rented house, and keep the schedule full without turning it into a forced march.</p></div>
+<div><div class="heading-with-top"><h2 id="travel-group">Travel Group</h2><a class="title-top-link" href="#top">Back to Top &#8593;</a></div><div class="group-title">The Travelers</div><ul class="traveler-list"><li>Art &amp; Angie</li><li>Rachel &amp; Jesse</li><li>Lisa &amp; Rich</li><li>William</li><li>Elanor</li></ul><div class="group-title">The Local Experts</div><ul class="traveler-list"><li>Cathy &amp; Charlie Herzog<br>3889 Carrick Bend Dr, Kissimmee, FL 34746<br>📞 <a href="tel:+12088191356">(208) 819-1356</a></li></ul></div>
 </section>
 
 <section class="planning-food-grid">
-<div><h2>Planning Status</h2><ul class="compact-list status-list">
+<div><div class="heading-with-top"><h2 id="planning-status">Planning Status</h2><a class="title-top-link" href="#top">Back to Top &#8593;</a></div><ul class="compact-list status-list">
 <li class="done">✅ 🏨 <strong>Airport Hotel Booked</strong> — Two rooms at Ramada by Wyndham Spokane Airport for October 4.</li>
 <li class="done">✅ ✈️ <strong>Flights Booked</strong> — Southwest Choice</li>
 <li class="done">✅ 🏠 <strong>Rental House Paid in Full</strong> — Titan confirmation received; paid in full.</li>
@@ -115,39 +120,11 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 <li>⚔️ <strong><a href="https://www.medievaltimes.com/orlando">Medieval Times Dinner &amp; Tournament</a></strong> — Tuesday, Oct. 6 at 6:00 PM; Cathy &amp; Charlie are covering the tickets.</li>
 <li>🐊 <strong>Airboat Adventure</strong> — Optional; choose and book while in Florida.</li>
 </ul></div>
-<div class="food-plan-card"><h2>Food Plan</h2><p>Breakfasts will mostly be simple rented-house food. Park lunches happen on park days, with casual restaurants, meals at the house, and some dinners or evenings with C<sup>2</sup> filling in the rest of the week.</p></div>
+<div class="food-plan-card"><div class="heading-with-top"><h2 id="food-plan">Food Plan</h2><a class="title-top-link" href="#top">Back to Top &#8593;</a></div><p>Breakfasts will mostly be simple rented-house food. Park lunches happen on park days, with casual restaurants, meals at the house, and some dinners or evenings with C<sup>2</sup> filling in the rest of the week.</p></div>
 </section>
-
-<section class="airboat-options" id="airboat-options">
-<div class="section-title-line"><h2>Airboat Options</h2><strong>Optional — choose while in Florida</strong></div>
-<div class="airboat-option-grid">
-<div class="card"><div class="card-inner">
-<h3><a href="https://bcairboats.com/" target="_blank" rel="noopener">Boggy Creek Airboat Adventures</a></h3>
-<p>Kissimmee-area Everglades airboat tours with 30-minute, 1-hour, private and specialty rides. The attraction also has a Gator Oasis, butterfly/critter gardens, gem mining, and a Highland-cow experience.</p>
-</div></div>
-<div class="card"><div class="card-inner">
-<h3><a href="https://www.wildfloridairboats.com/airboat-tours" target="_blank" rel="noopener">Wild Florida Airboat Tours</a></h3>
-<p>Airboat tours through the Headwaters of the Everglades. Every airboat ticket includes admission to the <strong>Alligator Park</strong>, with animal exhibits and shows; larger adventure packages can add lunch and other experiences.</p>
-</div></div>
-<div class="card"><div class="card-inner">
-<h3><a href="https://spiritoftheswamp.com/tours/large-group-1-hour-airboat-tour/" target="_blank" rel="noopener">Spirit of the Swamp — Large Group 1-Hour Tour</a></h3>
-<p>One-hour wildlife-focused airboat tour for groups of 7+, using small boats with padded seats, shade covers and headsets so riders can talk with the captain. This is the most airboat-focused option, without a separate animal park.</p>
-</div></div>
-</div>
-</section>
-
-<section id="accommodations">
-<div class="section-title-line"><h2><a href="https://www.vrbo.com/9821898ha">Disney Paradise Villa w/ South Private Pool</a></h2><a href="https://www.vrbo.com/9821898ha">Click for details</a></div>
-<div class="card"><div class="card-inner"><div class="accommodation-showcase">
-<div><p>Our home base for the trip — space to relax, play, swim, and make the week feel easy between Orlando adventures.</p><p><strong>Status:</strong> Paid in full. Final arrival instructions received from Titan.</p><p><strong>Check-in:</strong> After 4:00 PM Monday, October 5 &nbsp;•&nbsp; <strong>Checkout:</strong> 10:00 AM Monday, October 12.</p><div class="accommodation-features"><span>📍 4656 Cumbrian Lakes Drive, Kissimmee, FL 34746</span><span>🏊 Enclosed pool</span><span>🌅 Lake + conservation view</span><span>🚗 12–18 min to Cathy &amp; Charlie</span><span>🛏️ 5 bedrooms</span><span>🚿 3.5 bathrooms</span><span>🪄 Harry Potter twin room</span><span>🍳 Full kitchen</span><span>🍽️ Dining for 8</span><span>🧺 Washer/dryer</span><span>🎱 Game room: pool + foosball</span><span>🎮 Loft gaming: PS4 + Wii</span></div></div>
-<div class="accommodation-photos"><div class="accommodation-photo pool"></div><div class="accommodation-photo second"></div></div>
-<iframe class="accommodation-map" title="Map showing route from 4656 Cumbrian Lakes Drive to Cathy and Charlie Herzog at 3889 Carrick Bend Drive" loading="lazy" src="https://www.google.com/maps?output=embed&q=4656%20Cumbrian%20Lakes%20Drive%2C%20Kissimmee%2C%20FL%2034746%20to%203889%20Carrick%20Bend%20Dr%2C%20Kissimmee%2C%20FL%2034746&z=11"></iframe>
-</div></div></div>
-</section>
-
 
 <section id="spokane-airport-hotel">
-<div class="section-title-line"><h2>Night Before the Flight</h2><strong><a href="https://www.wyndhamhotels.com/en-uk/ramada/spokane-washington/ramada-spokane-airport-and-indoor-waterpark/overview" target="_blank" rel="noopener">Ramada by Wyndham Spokane Airport</a></strong></div>
+<div class="section-title-line"><div class="heading-with-top"><h2>Night Before the Flight</h2><a class="title-top-link" href="#top">Back to Top &#8593;</a></div><strong><a href="https://www.wyndhamhotels.com/en-uk/ramada/spokane-washington/ramada-spokane-airport-and-indoor-waterpark/overview" target="_blank" rel="noopener">Ramada by Wyndham Spokane Airport</a></strong></div>
 <div class="card"><div class="card-inner">
 <p>To make the 5:00 AM departure easier, Art &amp; Angie and Rich, Lisa, William &amp; Elanor will stay at the Ramada by Wyndham Spokane Airport on Sunday, October 4. Their cars can remain parked at the hotel during the trip, eliminating the planned Spokane airport parking expense.</p>
 <table>
@@ -164,7 +141,7 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 </section>
 
 <section id="flights">
-<div class="section-title-line"><h2>Flights</h2><strong>Southwest Airlines</strong></div>
+<div class="section-title-line"><div class="heading-with-top"><h2>Flights</h2><a class="title-top-link" href="#top">Back to Top &#8593;</a></div><strong>Southwest Airlines</strong></div>
 <div class="card"><div class="card-inner">
 <p><strong>Confirmation: BV6ER3.</strong> Current itinerary verified October 3, 2026. All flight times are local to each airport. Check in online or in the Southwest app starting 24 hours before departure; save boarding passes to the phone.</p>
 <div class="subhead">Outbound — Monday, October 5, 2026</div>
@@ -183,7 +160,7 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 </section>
 
 <section id="vehicle-rental">
-<div class="section-title-line"><h2>Vehicles</h2><strong>Budget</strong></div>
+<div class="section-title-line"><div class="heading-with-top"><h2>Vehicles</h2><a class="title-top-link" href="#top">Back to Top &#8593;</a></div><strong>Budget</strong></div>
 <div class="card"><div class="card-inner"><p>Two SUVs are reserved for the family week: one mid-size SUV and one full-size SUV. Together they should cover people, luggage, grocery runs, park days, and the inevitable “who needs to leave early?” split without forcing everyone into one vehicle.</p><p>Reservations are through Costco Travel / Budget. For the Standard Elite SUV, Costco currently shows confirmation <strong>C495101872</strong>. Keep the previous Costco confirmation <strong>C495101877</strong> handy as a reference in case there is a question at pickup.</p>
 <p><strong>Drivers:</strong> Large SUV — Art primary, Jesse additional. Small SUV — Angie primary, Lisa additional.</p>
 <h3>Reserved Vehicles</h3><table><thead><tr><th>Vehicle</th><th>Dates</th><th>Category</th><th>Costco Conf #</th><th>Budget Conf #</th></tr></thead><tbody>
@@ -192,8 +169,17 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 </tbody></table></div></div>
 </section>
 
+<section id="accommodations">
+<div class="section-title-line"><div class="heading-with-top"><h2><a href="https://www.vrbo.com/9821898ha">Disney Paradise Villa w/ South Private Pool</a></h2><a class="title-top-link" href="#top">Back to Top &#8593;</a></div><a href="https://www.vrbo.com/9821898ha">Click for details</a></div>
+<div class="card"><div class="card-inner"><div class="accommodation-showcase">
+<div><p>Our home base for the trip — space to relax, play, swim, and make the week feel easy between Orlando adventures.</p><p><strong>Status:</strong> Paid in full. Final arrival instructions received from Titan.</p><p><strong>Check-in:</strong> After 4:00 PM Monday, October 5 &nbsp;•&nbsp; <strong>Checkout:</strong> 10:00 AM Monday, October 12.</p><div class="accommodation-features"><span>📍 4656 Cumbrian Lakes Drive, Kissimmee, FL 34746</span><span>🏊 Enclosed pool</span><span>🌅 Lake + conservation view</span><span>🚗 12–18 min to Cathy &amp; Charlie</span><span>🛏️ 5 bedrooms</span><span>🚿 3.5 bathrooms</span><span>🪄 Harry Potter twin room</span><span>🍳 Full kitchen</span><span>🍽️ Dining for 8</span><span>🧺 Washer/dryer</span><span>🎱 Game room: pool + foosball</span><span>🎮 Loft gaming: PS4 + Wii</span></div></div>
+<div class="accommodation-photos"><div class="accommodation-photo pool"></div><div class="accommodation-photo second"></div></div>
+<iframe class="accommodation-map" title="Map showing route from 4656 Cumbrian Lakes Drive to Cathy and Charlie Herzog at 3889 Carrick Bend Drive" loading="lazy" src="https://www.google.com/maps?output=embed&q=4656%20Cumbrian%20Lakes%20Drive%2C%20Kissimmee%2C%20FL%2034746%20to%203889%20Carrick%20Bend%20Dr%2C%20Kissimmee%2C%20FL%2034746&z=11"></iframe>
+</div></div></div>
+</section>
+
 <section id="itinerary">
-<h2>Week-at-a-Glance Itinerary</h2>
+<div class="heading-with-top"><h2>Week-at-a-Glance Itinerary</h2><a class="title-top-link" href="#top">Back to Top &#8593;</a></div>
 <p><strong>Flexible by design:</strong> the two park days and two evening shows are now fixed, while the remaining open time stays flexible for rest, family time, weather, crowds, and whatever sounds fun that day.</p>
 
 <table class="week-table"><tbody>
@@ -223,7 +209,23 @@ footer{margin-top:18px;text-align:center;color:var(--muted);font:.88rem "Segoe U
 </div></details>
 </section>
 
-
+<section class="airboat-options" id="airboat-options">
+<div class="section-title-line"><div class="heading-with-top"><h2>Airboat Options</h2><a class="title-top-link" href="#top">Back to Top &#8593;</a></div><strong>Optional — choose while in Florida</strong></div>
+<div class="airboat-option-grid">
+<div class="card"><div class="card-inner">
+<h3><a href="https://bcairboats.com/" target="_blank" rel="noopener">Boggy Creek Airboat Adventures</a></h3>
+<p>Kissimmee-area Everglades airboat tours with 30-minute, 1-hour, private and specialty rides. The attraction also has a Gator Oasis, butterfly/critter gardens, gem mining, and a Highland-cow experience.</p>
+</div></div>
+<div class="card"><div class="card-inner">
+<h3><a href="https://www.wildfloridairboats.com/airboat-tours" target="_blank" rel="noopener">Wild Florida Airboat Tours</a></h3>
+<p>Airboat tours through the Headwaters of the Everglades. Every airboat ticket includes admission to the <strong>Alligator Park</strong>, with animal exhibits and shows; larger adventure packages can add lunch and other experiences.</p>
+</div></div>
+<div class="card"><div class="card-inner">
+<h3><a href="https://spiritoftheswamp.com/tours/large-group-1-hour-airboat-tour/" target="_blank" rel="noopener">Spirit of the Swamp — Large Group 1-Hour Tour</a></h3>
+<p>One-hour wildlife-focused airboat tour for groups of 7+, using small boats with padded seats, shade covers and headsets so riders can talk with the captain. This is the most airboat-focused option, without a separate animal park.</p>
+</div></div>
+</div>
+</section>
 </main>
 <footer>Updated October 1, 2026 • Version 2026.10.01.1</footer>
 </div>
